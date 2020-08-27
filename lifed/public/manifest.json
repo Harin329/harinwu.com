@@ -1,0 +1,25 @@
+{
+  "short_name": "Lifed",
+  "name": "Lifed Vision Board",
+  "icons": [
+    {
+      "src": "Life.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Life200.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "Life500.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

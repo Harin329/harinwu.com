@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AWS DeepRacer</title>
+  <meta name="description" content="AWS">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/WebsiteIcons/Infinity.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <p>
+          <a href="../">Home</a><span class="divider"></span> <a href="../about">About Me</a><span
+            class="divider"></span> <a href="../goals">Goals</a>
+        </p>
+
+
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">Amazon Web Services DeepRacer</h1>
+            <p class="work-page__time"><time datetime="2020-05-01T00:00:00+00:00" itemprop="datePublished">May
+                2020</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+                <a href="https://github.com/Harin329" target="_blank"><img class="OpenGithub" src="../images/Github.png"
+                    alt="Github" style="width:50px; float: left;"></a>
+                    <img src="../images/DeepRacer/DeepRacer.png" />
+              <video width="320" height="240" controls>
+                <source src="../videos/DeepRacer/SummitTT.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <video width="320" height="240" controls>
+                <source src="../videos/DeepRacer/VirtualTT.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <video width="320" height="240" controls>
+                <source src="../videos/DeepRacer/SummitH2H.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <video width="320" height="240" controls>
+                <source src="../videos/DeepRacer/VirtualH2H.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">GOALS:</p>
+              <p class="post-value">Learn, Build and Compete in the AWS DeepRacer Reinforcement Learning League - Finish
+                Top 100</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Python, AWS, PPO Algorithms, Selenium</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ACCOMPLISHMENTS:</p>
+              <p class="post-value">32nd out of Thousands of Racers (94th Percentile), $400 USD Prize + $35 AWS Credits</p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">DESCRIPTION:</p>
+              <p>
+                My AWS Deep Racer Progress in May 2020 <br /> <br />
+
+                - 10 Days of Learning + Setup<br />
+                - 20 Days of Trial and Error Training<br /><br />
+                
+                <img src="../images/DeepRacer/DeepRacerDashboard.png" />
+
+                Goal:<br />
+                - Finish at least top 100 out all racers<br /><br />
+
+                Result: <br />
+                <b>Summit Time Trial - 32/341 - Top 9%</b> <br />
+                Summit Head 2 Head - 37/157 - Top 23% <br />
+                <b>Virtual Time Trial - 79/1291 - Top 6%</b> <br />
+                Virtual Object Avoidance - 39/134 - Top 29% <br />
+                Virtual Head 2 Head - 50/202 - Top 25% <br /><br />
+                <img src="../images/DeepRacer/SummitResult.png" />
+                <img src="../images/DeepRacer/VirtualResult.png" />
+
+                Success :)<br /><br />
+
+                ***<br /><br />
+
+                Model Description:<br />
+                1. <b>Barcelona Model</b><br />
+                - Attempt to use a complex functions and guide the car to follow a drawn line based off of Fernando
+                Alonso's F1 drive through in 2018 (https://www.youtube.com/watch?v=e5uArfwC4Zk).<br />
+                - Too complex, convergence was too slow, car wasn't really learning<br />
+                - Performed decently, was my leading Barcelona model until All You Model (#5)<br />
+                2. <b>Slow Complex Model</b><br />
+                - Similar Attempt as Model 1, without pathfinding<br />
+                - Surpassed by Pathfinder Model (#3)<br />
+                3. <b>Pathfinder Model</b><br />
+                - Relying only on a given path and speed<br />
+                - Surpassed by Speed Model (#4)<br />
+                4. <b>Speed Model</b><br />
+                - Rewarded completion and staying left of track, less distance to cover on the left, much simpler<br />
+                - Surpassed by All You Model (#5)<br />
+                5. <b>All You Model</b><br />
+                - Simplest Model, Don't go off track, finish the lap, fast<br />
+                - Top finishes, could've been improved with more training time
+
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <footer class="page_footer">
+        <p>
+          <a href="mailto:harinwu99@gmail.com">
+            <div>
+              <img src="../images/Gmail.png" height="30px" style="margin: 10px;" />
+            </div>
+          </a>
+
+          <a href="https://github.com/Harin329">
+            <div>
+              <img src="../images/Github.png" height="30px" style="margin: 10px;" />
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/hao-harin-wu-28a59a160">
+            <div>
+              <img src="../images/LinkedIn.png" height="30px" style="margin: 10px;" />
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/harin.wu">
+            <div>
+              <img src="../images/Facebook.png" height="35px" style="margin: 5px;" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/harinwu">
+            <div>
+              <img src="../images/Instagram.png" height="50px" style="margin-left: 5px;" />
+            </div>
+          </a>
+          <a href="https://twitter.com/harinhaowu">
+            <div>
+              <img src="../images/Twitter.svg" height="55px" style="margin: 0px;" />
+            </div>
+          </a>
+
+
+
+
+      </footer>
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
