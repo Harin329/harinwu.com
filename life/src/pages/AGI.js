@@ -30,7 +30,7 @@ import { v4 as uuidv4 } from "uuid";
 import { colors } from "@material-ui/core";
 
 function callback() {
-  console.log("element snapped");
+  console.log("Snapped");
 }
 
 function AGI() {
@@ -57,6 +57,7 @@ function AGI() {
             style={{
               objectFit: "cover",
               height: "100%",
+              width:"100%"
             }}
           />
           <div style={{ position: "absolute" }}>AGI</div>
@@ -68,6 +69,7 @@ function AGI() {
             style={{
               objectFit: "cover",
               height: "100%",
+              width:"100%"
             }}
           />
           <div style={{ position: "absolute" }}>AGI</div>
@@ -79,6 +81,7 @@ function AGI() {
             style={{
               objectFit: "cover",
               height: "100%",
+              width:"100%"
             }}
           />
           <div style={{ position: "absolute" }}>Type 1</div>
@@ -90,6 +93,7 @@ function AGI() {
             style={{
               objectFit: "cover",
               height: "100%",
+              width:"100%"
             }}
           />
           <div style={{ position: "absolute" }}>Digital Conciousness</div>

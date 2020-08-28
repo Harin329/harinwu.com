@@ -36,7 +36,7 @@ import { v4 as uuidv4 } from "uuid";
 import { colors } from "@material-ui/core";
 
 function callback() {
-  console.log("element snapped");
+  console.log("Snapped");
 }
 
 function Type1() {

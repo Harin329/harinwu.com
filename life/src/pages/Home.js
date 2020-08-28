@@ -3,11 +3,7 @@ import "../styles/styles.css";
 import branding from "../styles/branding";
 import ScrollSnap from "scroll-snap";
 import Link from "@material-ui/core/Link";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import AGI from "../pages/AGI";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
@@ -36,7 +32,7 @@ import { v4 as uuidv4 } from "uuid";
 import { colors } from "@material-ui/core";
 
 function callback() {
-  console.log("element snapped");
+  console.log("Snapped");
 }
 
 function Home() {
@@ -49,101 +45,251 @@ function Home() {
   }, []);
 
   return (
-    <div
-      className="App"
-      style={{
-        textAlign: "center",
-      }}
-    >
-      <div id="container" ref={containerRef}>
-        <div className="page first-page">
-          <img
-            src={require("../assets/HarinLong.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-            }}
-          />
-          <div style={{ position: "absolute" }}>Harin (Hao) Wu</div>
-        </div>
-        <div className="page second-page">
-          <img
-            src={require("../assets/Code.png")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-            }}
-          />
-          <div style={{ position: "absolute" }}>AGI</div>
-        </div>
-        <div className="page third-page">
-          <img
-            src={require("../assets/Type1.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-            }}
-          />
-          <div style={{ position: "absolute" }}>Type 1</div>
-        </div>
-        <div className="page fourth-page">
+    <div id="container" ref={containerRef}>
+      <div className="page first-page">
         <img
-            src={require("../assets/Infinity.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-            }}
-          />
-          <div style={{ position: "absolute" }}>Digital Conciousness</div>
-        </div>
-      </div>
-      {/* <Container
-        fluid
-        style={{
-          textAlign: "center",
-        }}
-      >
-        <img
-          src={require("../assets/Harin.jpg")}
+          src={require("../assets/HarinLong.jpg")}
           alt="Harin"
           style={{
-            width: 200,
-            height: 200,
-            borderRadius: 20,
             objectFit: "cover",
-            marginTop: "29px",
+            height: "100%",
+            width: "100%",
           }}
         />
-        <h3
+        <div style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "absolute",
+            bottom: "5%",
+            width: "95%",
+            height: "10px",
+          }}>
+        <img
+              src={require("../assets/Down.gif")}
+              alt="Down"
+              style={{
+                objectFit: "cover",
+                height: "80px",
+                width: "80px",
+                color: "#ffffff"
+              }}
+            />
+        </div>
+        <div
           style={{
-            fontFamily: branding.FontMedium,
-            marginTop: "29px",
-            fontSize: "20px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            position: "absolute",
+            bottom: "10%",
+            width: "95%",
+            height: "150px",
           }}
         >
-          Hi, My name is Hao Wu. <br />
-          <br /> You can call me Harin!
-        </h3>
-        <h5
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "20%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+              padding: 10,
+            }}
+          >
+            <img
+              src={require("../assets/Elon.jpg")}
+              alt="Musk"
+              style={{
+                objectFit: "cover",
+                height: "100px",
+                width: "100px",
+                borderRadius: 100,
+              }}
+            />
+            Elon Musk
+            <br />
+            <br />
+            Inspiration for Innovation
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "50%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+            }}
+          >
+            Hi, My name is Hao Wu. You can call me Harin! <br />
+            <br />
+            This section is purely dedicated toward my future goals and
+            aspirations.
+            <br />
+            My experiences and achievements can be found here!
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "20%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+              padding: 10,
+            }}
+          >
+            Lionel Messi
+            <br />
+            <br />
+            Inspiration for Excellence
+            <img
+              src={require("../assets/Messi.jpg")}
+              alt="Messi"
+              style={{
+                objectFit: "cover",
+                height: "100px",
+                width: "100px",
+                borderRadius: 100,
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="page second-page">
+        <img
+          src={require("../assets/Code.png")}
+          alt="Harin"
           style={{
-            fontFamily: branding.FontRegular,
-            marginTop: "29px",
-            fontSize: "14px",
+            objectFit: "cover",
+            height: "100%",
+            width: "100%",
+          }}
+        />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            position: "absolute",
+            bottom: "10%",
+            width: "95%",
+            height: "150px",
           }}
         >
-          I disliked setting goals when I was young...
-          <br />
-          <br />
-          ...but I increasingly saw its value as time passed...
-          <br />
-          <br />
-          ...now I define myself through my goals!
-        </h5>
-      </Container>*/}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "20%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+              padding: 10,
+            }}
+          >
+            <img
+              src={require("../assets/Harin.jpg")}
+              alt="Harin"
+              style={{
+                objectFit: "cover",
+                height: "100px",
+                width: "100px",
+                borderRadius: 100,
+              }}
+            />
+            OpenAI
+            <br /> 
+            <br /> 
+            Inspired By
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "50%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+            }}
+          >
+            Hi, My name is Hao Wu. You can call me Harin! <br />
+            <br />
+            This section is purely dedicated toward my future goals and
+            aspirations.
+            <br />
+            My experiences and achievements can be found here!
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "20%",
+              height: "150px",
+              borderRadius: 5,
+              backgroundColor: "rgba(0,0,0, 0.7)",
+              color: "#ffffff",
+              fontFamily: branding.FontMedium,
+              padding: 10,
+            }}
+          >
+            See My Short Term Goals!
+            <img
+              src={require("../assets/Harin.jpg")}
+              alt="Harin"
+              style={{
+                objectFit: "cover",
+                height: "100px",
+                width: "100px",
+                borderRadius: 100,
+              }}
+            />
+          </div>
+        </div>
+      
+      </div>
+      <div className="page third-page">
+        <img
+          src={require("../assets/Type1.jpg")}
+          alt="Harin"
+          style={{
+            objectFit: "cover",
+            height: "100%",
+            width: "100%",
+          }}
+        />
+        <div style={{ position: "absolute" }}>Type 1</div>
+      </div>
+      <div className="page fourth-page">
+        <img
+          src={require("../assets/Infinity.jpg")}
+          alt="Harin"
+          style={{
+            objectFit: "cover",
+            height: "100%",
+            width: "100%",
+          }}
+        />
+        <div style={{ position: "absolute" }}>Digital Conciousness</div>
+      </div>
     </div>
   );
 }
