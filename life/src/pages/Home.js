@@ -3,7 +3,7 @@ import "../styles/styles.css";
 import branding from "../styles/branding";
 import ScrollSnap from "scroll-snap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function callback() {
   console.log("Snapped");
@@ -99,16 +99,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/life" style={{ display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "20%",
-              height: "50px",
-              borderRadius: 100,
-              backgroundColor: "rgba(0,0,0, 0.7)",
-              color: "#ffffff",
-              fontFamily: branding.FontMedium,
-              margin: 5,}}>SEE MORE</NavLink>
+          <NavLink to="/life" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
         </div>
       <div className="page second-page">
@@ -168,16 +159,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/agi" style={{ display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "20%",
-              height: "50px",
-              borderRadius: 100,
-              backgroundColor: "rgba(0,0,0, 0.7)",
-              color: "#ffffff",
-              fontFamily: branding.FontMedium,
-              margin: 5,}}>SEE MORE</NavLink>
+          <NavLink to="/agi" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
         </div>
@@ -238,16 +220,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/typeI" style={{ display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "20%",
-              height: "50px",
-              borderRadius: 100,
-              backgroundColor: "rgba(0,0,0, 0.7)",
-              color: "#ffffff",
-              fontFamily: branding.FontMedium,
-              margin: 5,}}>SEE MORE</NavLink>
+          <NavLink to="/typeI" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
       </div>
@@ -308,16 +281,7 @@ function Home() {
             height: "150px",
           }}
         >
-            <NavLink to="/conciousness" style={{ display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "20%",
-              height: "50px",
-              borderRadius: 100,
-              backgroundColor: "rgba(0,0,0, 0.7)",
-              color: "#ffffff",
-              fontFamily: branding.FontMedium,
-              margin: 5,}}>SEE MORE</NavLink>
+            <NavLink to="/conciousness" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
       </div>

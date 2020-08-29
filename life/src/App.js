@@ -52,10 +52,7 @@ function App() {
           </div>
           <Link
             style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
-            href="#"
-            onClick={() => {
-              console.log("click");
-            }}
+            href="www.harinwu.com"
           >
             Resume
           </Link>

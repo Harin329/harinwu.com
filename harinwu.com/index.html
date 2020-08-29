@@ -9,6 +9,7 @@
   <meta name="description" content="Harin (Hao) Wu">
   <link rel="shortcut icon" type="image/x-icon" href="./images/WebsiteIcons/Infinity.png" />
 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="./styles/harinstyles.css" />
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
@@ -17,19 +18,39 @@
 <body>
   <main class="main-container">
     <div class="page">
+      <!-- Resume Modal -->
+      <div id="downloadResume" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+          <div class="w3-container w3-white">
+            <span onclick="document.getElementById('downloadResume').style.display='none'" class="close">&times;</span>
+            <h1 class="w3-large">Download Resume Below</h1>
+            <p class="w3-medium"><a href="./2020HarinWu.docx" target="_blank" class="w3-hover-text-red">.DOCX
+                Download</a>
+            </p>
+            <p class="w3-medium"><a href="./2020HarinWu.pdf" target="_blank" class="w3-hover-text-red">.PDF
+                Download</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <header class="page_header">
+        <!-- Header -->
         <p>
-          <a href="./">Home</a><span class="divider"></span> <a href="./about/">About Me</a><span
-            class="divider"></span> <a href="./goals/">Goals</a>
+          <a href="./">Home</a><span class="divider"></span> <a href="./goals/">About Me</a><span
+            class="divider"></span> <a onclick="document.getElementById('downloadResume').style.display='block'">Resume</a>
         </p>
 
 
-        <a href="./about/"><h1 class="home-h1" style="font-size: 29px;"><b>Harin (Hao) Wu</b></h1></a>
+        <!-- Harin -->
+        <a href="./about/">
+          <h1 class="home-h1" style="font-size: 29px;"><b>Harin (Hao) Wu</b></h1>
+        </a>
         <p class="title-p">
           Problem Solver<span class="divider"></span> Innovator<span class="divider"></span> Developer
         </p>
         <a href="./about/">
-        <img class="preview-img" src="./images/Harin.JPG" />
+          <img class="preview-img" src="./images/Harin.JPG" />
         </a>
 
       </header>

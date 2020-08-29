@@ -13,23 +13,23 @@ code {
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans'), url(./fonts/OpenSans-Light.ttf) format('truetype');
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./fonts/GothamLight.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans'), url(./fonts/OpenSans-Regular.ttf) format('truetype');
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./fonts/GothamBook.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Gotham';
     font-weight: 900;
-    src: local('OpenSans'), url(./fonts/OpenSans-SemiBold.ttf) format('truetype');
+    src: local('Gotham'), url(./fonts/GothamMedium.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Gotham';
     font-weight: 900;
-    src: local('OpenSans'), url(./fonts/OpenSans-Bold.ttf) format('truetype');
+    src: local('Gotham'), url(./fonts/GothamBold.ttf) format('truetype');
 }
