@@ -20,5 +20,7 @@ export default {
        * [default: 300]
        **/
       duration: 300,
-    }
+    },
+    black: "#393c41",
+    gray: "#5c5e62"
   };

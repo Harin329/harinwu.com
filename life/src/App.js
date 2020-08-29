@@ -6,8 +6,9 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import AGI from "./pages/AGI";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
-import Type1 from "./pages/Type1";
+import TypeI from "./pages/TypeI";
 import Immortal from "./pages/Immortal";
+import Life from "./pages/Life";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           style={{
             display: "flex",
             alignItems: "center",
+            justifyContent: 'center',
             width: "100%",
             height: "100px",
             backgroundColor: "#0000",
@@ -30,8 +32,7 @@ function App() {
           }}
         >
           <Link
-            style={{ fontFamily: branding.FontMedium, flex: 1 }}
-            color="inherit"
+            style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
             href="/"
           >
             Harin (Hao) Wu
@@ -44,13 +45,13 @@ function App() {
               justifyContent: "center",
             }}
           >
-              <NavLink to="/agi" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:"#000000" }}>AGI</NavLink>
-              <NavLink to="/type1" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:"#000000" }}>Type 1 Civilization</NavLink>
-              <NavLink to="/conciousness" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:"#000000" }}>Digital Conciousness</NavLink>
+              <NavLink to="/life" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Life</NavLink>
+              <NavLink to="/agi" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>AGI</NavLink>
+              <NavLink to="/typeI" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Type I Civilization</NavLink>
+              <NavLink to="/conciousness" style={{ fontFamily: branding.FontMedium, color:branding.black }}>Digital Conciousness</NavLink>
           </div>
           <Link
-            style={{ fontFamily: branding.FontMedium, flex: 1 }}
-            color="inherit"
+            style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
             href="#"
             onClick={() => {
               console.log("click");
@@ -60,8 +61,9 @@ function App() {
           </Link>
         </div>
         <Route exact path="/" component={Home}/>
+        <Route path="/life" component={Life}/>
         <Route path="/agi" component={AGI}/>
-        <Route path="/type1" component={Type1}/>
+        <Route path="/typeI" component={TypeI}/>
         <Route path="/conciousness" component={Immortal}/>
       </div>
     </HashRouter>

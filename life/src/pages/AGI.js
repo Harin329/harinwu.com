@@ -24,10 +24,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CurvedArrow from "react-curved-arrow";
 import { db, firestore, auth } from "../services/firebase";
 import { v4 as uuidv4 } from "uuid";
 import { colors } from "@material-ui/core";
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 
 function callback() {
   console.log("Snapped");
@@ -43,63 +49,74 @@ function AGI() {
   }, []);
 
   return (
-    <div
-      className="App"
-      style={{
-        textAlign: "center",
-      }}
-    >
      <div id="container" ref={containerRef}>
         <div className="page first-page">
-          <img
-            src={require("../assets/HarinLong.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-              width:"100%"
-            }}
-          />
-          <div style={{ position: "absolute" }}>AGI</div>
-        </div>
-        <div className="page second-page">
-          <img
-            src={require("../assets/Code.png")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-              width:"100%"
-            }}
-          />
-          <div style={{ position: "absolute" }}>AGI</div>
-        </div>
-        <div className="page third-page">
-          <img
-            src={require("../assets/Type1.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-              width:"100%"
-            }}
-          />
-          <div style={{ position: "absolute" }}>Type 1</div>
-        </div>
-        <div className="page fourth-page">
-        <img
-            src={require("../assets/Infinity.jpg")}
-            alt="Harin"
-            style={{
-              objectFit: "cover",
-              height: "100%",
-              width:"100%"
-            }}
-          />
-          <div style={{ position: "absolute" }}>Digital Conciousness</div>
+        <div>
+        <p style={{ fontFamily: branding.FontMedium, fontSize: 36, marginTop: 50}}>
+              Artificial General Intelligence<br />
+              <p
+                style={{
+                  fontFamily: branding.FontRegular,
+                  fontSize: 16,
+                  color: branding.gray,
+                }}
+              >
+                The Final Invention of Humanity
+              </p>
+            </p>
+          <p style={{marginRight: '20%', marginLeft: '20%'}}>
+            As a devoted football fan, I watched Messi create seemingly impossible goals as my jaws dropped. Identically, I felt the same about the breakthroughs in the 
+            AI community, with new applications imagined and limits consistently broken.
+            Yet, the topic still has so much uncertainty, being simultaneously underestimated and overestimated. Even less is known of
+          the singularity point, the point in time where we create a strong AI. The technology already influences our world, from self driving cars and writing code to
+          optimization and prediction. I see it as an exciting opportunity to take humanity to the next level, but there is much to learn, and every step
+          must be carefully taken. 
+            </p>
+            Today
+        <Timeline align="alternate">
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography color="textSecondary">Current</Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography  style={{ display:'flex', alignItems:"left"}}>Reinforcement Learning Based Chatbot</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography color="textSecondary"></Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography>3D Printed Autonomous Following Drone</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography color="textSecondary"></Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent  style={{ display:'flex', alignItems:"left"}}>
+            <Typography>Sound Driven AI Program</Typography>
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
+      Artificial General Intelligence
+      <br/>
+      Consistently Passing the Turing Test, Indistinguishable from Human
+      </div>
         </div>
       </div>
-    </div>
   );
 }
 

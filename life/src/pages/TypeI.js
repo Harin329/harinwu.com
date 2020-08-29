@@ -16,7 +16,7 @@ function callback() {
   console.log("Snapped");
 }
 
-function Immortal() {
+function TypeI() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function Immortal() {
         <div className="page first-page">
           <div>
           <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
-              Digital Conciousness<br />
+              Type 1 Civilization<br />
               <p
                 style={{
                   fontFamily: branding.FontRegular,
@@ -38,12 +38,13 @@ function Immortal() {
                   color: branding.gray,
                 }}
               >
-                Understanding the Human Brain, Mind Uploading, Digital Immortality
+                Becoming a Planetary Civilization, Controlling All Energy on Earth
               </p>
             </p>
-            <p style={{marginRight: '20%', marginLeft: '20%'}}>Very ambitious, but the ability to digitalize our thoughts and perceptions would be an exciting step forward.
-              Currently, our five senses allow us to percieve and interact with the world. Each sense has inputs 'devices' which send electrical signals to our brain.
-              If we were able to map these signals in the brain and control them, we would be a step closer to understanding conciousness and simulating experiences.
+          <p style={{marginRight: '20%', marginLeft: '20%'}}>The Kardashev scale has been a widely accepted measurement of a civilization's level of technology.
+          Being amazed by the sheer force of ocean waves, storms and natural disasters, there is so much potential energy out around us waiting to be used.
+          It is said that money makes the world spin, but really it is energy that makes the world spin, literally and figuratively. I would love to see our civilization
+          accelerate the progress to become a type I civilization
             </p>
             Today
         <Timeline align="alternate">
@@ -56,7 +57,7 @@ function Immortal() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent style={{ display:'flex', alignItems:"left"}}>
-            <Typography>Learning Brain Functionality (Sound Emphasis) - EEG Setup For Exploring</Typography>
+            <Typography>Learning about Solar - Building My Own Solar Panel to Power iPhone</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -68,7 +69,7 @@ function Immortal() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Brain Functions For Remaining Senses</Typography>
+            <Typography>Building Battery for Storing Solar</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -80,7 +81,7 @@ function Immortal() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent style={{ display:'flex', alignItems:"left"}}>
-            <Typography>Replicating Brain Functions</Typography>
+            <Typography>Energy From Natural Disasters</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -92,18 +93,17 @@ function Immortal() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Exploring Conciousness</Typography>
+            <Typography>Fully Renewable Planet</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
-      Digital Conciousness
-      <br/>
-      The Ability to Send a Concious Mind From One Host Body to Another
+      Type I Civilization <br/>
+      Humanity Classified as a Type I Civilization on the Kardashev Scale
       </div>
         </div>
         
-         </div>
+        </div>
   );
 }
 
-export default Immortal;
+export default TypeI;
