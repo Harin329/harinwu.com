@@ -11,6 +11,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from "@material-ui/core/Typography";
+import { useMediaQuery } from 'react-responsive'
 
 function callback() {
   console.log("Snapped");
@@ -18,6 +19,7 @@ function callback() {
 
 function Immortal() {
   const containerRef = useRef(null);
+  const isMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
   useEffect(() => {
     const element = document.getElementById("container");
@@ -29,19 +31,19 @@ function Immortal() {
       <div id="container" ref={containerRef}>
         <div className="page first-page">
           <div>
-          <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
+          <p style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 28 : 36, marginTop: 100 }}>
               Digital Conciousness<br />
               <p
                 style={{
                   fontFamily: branding.FontRegular,
-                  fontSize: 16,
+                  fontSize: isMobile ? 12 : 16,
                   color: branding.gray,
                 }}
               >
                 Understanding the Human Brain, Mind Uploading, Digital Immortality
               </p>
             </p>
-            <p style={{marginRight: '20%', marginLeft: '20%'}}>Very ambitious, but the ability to digitalize our thoughts and perceptions would be an exciting step forward.
+            <p style={{marginRight: isMobile ? "10%" : "20%", marginLeft: isMobile ? "10%" : "20%", fontSize: isMobile ? 12 : 16}}>Very ambitious, but the ability to digitalize our thoughts and perceptions would be an exciting step forward.
               Currently, our five senses allow us to percieve and interact with the world. Each sense has inputs 'devices' which send electrical signals to our brain.
               If we were able to map these signals in the brain and control them, we would be a step closer to understanding conciousness and simulating experiences.
             </p>

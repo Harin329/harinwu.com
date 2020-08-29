@@ -27,7 +27,7 @@ export default {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "20%",
+    width: 329,
     height: "50px",
     borderRadius: 100,
     backgroundColor: "rgba(0,0,0, 0.7)",
@@ -36,5 +36,16 @@ export default {
     paddingTop: 10,
     fontSize: 12,
     margin: 5,
+  },
+  drawerButton: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 200,
+    height: "50px",
+    fontFamily: "Gotham-Medium",
+    paddingTop: 10,
+    fontSize: 12,
+    color: "#393c41"
   },
 };

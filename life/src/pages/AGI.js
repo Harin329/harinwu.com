@@ -34,6 +34,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import { useMediaQuery } from 'react-responsive'
 
 function callback() {
   console.log("Snapped");
@@ -41,6 +42,7 @@ function callback() {
 
 function AGI() {
   const containerRef = useRef(null);
+  const isMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
   useEffect(() => {
     const element = document.getElementById("container");
@@ -52,19 +54,19 @@ function AGI() {
      <div id="container" ref={containerRef}>
         <div className="page first-page">
         <div>
-        <p style={{ fontFamily: branding.FontMedium, fontSize: 36, marginTop: 50}}>
+        <p style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 28 : 36, marginTop: 100}}>
               Artificial General Intelligence<br />
               <p
                 style={{
                   fontFamily: branding.FontRegular,
-                  fontSize: 16,
+                  fontSize: isMobile ? 12 : 16,
                   color: branding.gray,
                 }}
               >
                 The Final Invention of Humanity
               </p>
             </p>
-          <p style={{marginRight: '20%', marginLeft: '20%'}}>
+          <p style={{marginRight: isMobile ? "10%" : "20%", marginLeft: isMobile ? "10%" : "20%", fontSize: isMobile ? 12 : 16}}>
             As a devoted football fan, I watched Messi create seemingly impossible goals as my jaws dropped. Identically, I felt the same about the breakthroughs in the 
             AI community, with new applications imagined and limits consistently broken.
             Yet, the topic still has so much uncertainty, being simultaneously underestimated and overestimated. Even less is known of
