@@ -99,7 +99,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/life" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/goals/life" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
         </div>
       <div className="page second-page">
@@ -159,7 +159,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/agi" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/goals/agi" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
         </div>
@@ -220,7 +220,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/typeI" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/goals/typeI" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
       </div>
@@ -281,7 +281,7 @@ function Home() {
             height: "150px",
           }}
         >
-            <NavLink to="/conciousness" style={branding.seeMoreButton}>SEE MORE</NavLink>
+            <NavLink to="/goals/conciousness" style={branding.seeMoreButton}>SEE MORE</NavLink>
         </div>
       
       </div>

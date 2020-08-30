@@ -1,6 +1,6 @@
 {
-  "short_name": "Lifed",
-  "name": "Lifed Vision Board",
+  "short_name": "Life",
+  "name": "Life Vision Board",
   "icons": [
     {
       "src": "Life.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "Life200.png",
+      "src": "Infinity200.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "200x200"
     },
     {
-      "src": "Life500.png",
+      "src": "Infinity500.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "200x200"
     }
   ],
   "start_url": ".",

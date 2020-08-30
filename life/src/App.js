@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/styles.css";
 import branding from "./styles/branding";
 import Link from "@material-ui/core/Link";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import AGI from "./pages/AGI";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div
         className="App"
         style={{
@@ -49,7 +49,7 @@ function App() {
         >
           <Link
             style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
-            href="/"
+            href="/goals"
           >
             Harin (Hao) Wu
           </Link>
@@ -61,14 +61,14 @@ function App() {
               justifyContent: "center",
             }}
           >
-              <NavLink to="/life" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Life</NavLink>
-              <NavLink to="/agi" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>AGI</NavLink>
-              <NavLink to="/typeI" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Type I Civilization</NavLink>
-              <NavLink to="/conciousness" style={{ fontFamily: branding.FontMedium, color:branding.black }}>Digital Conciousness</NavLink>
+              <NavLink to="/goals/life" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Life</NavLink>
+              <NavLink to="/goals/agi" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>AGI</NavLink>
+              <NavLink to="/goals/typeI" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Type I Civilization</NavLink>
+              <NavLink to="/goals/conciousness" style={{ fontFamily: branding.FontMedium, color:branding.black }}>Digital Conciousness</NavLink>
           </div>
           <Link
             style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
-            href="www.harinwu.com"
+            href="https://harinwu.com"
           >
             Resume
           </Link>
@@ -88,24 +88,25 @@ function App() {
       onOpen={toggleDrawer()}
     >
       <List>
-        {['Home', 'Life', 'AGI', 'Type I Civilization', 'Digital Conciousness'].map((text) => (
+        {['Home', 'Life', 'AGI', 'Type I Civilization', 'Digital Conciousness', 'Resume'].map((text) => (
           <div>
-            {text == 'Home' && <NavLink to="/" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text == 'Life' && <NavLink to="/life" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text == 'AGI' && <NavLink to="/agi" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text == 'Type I Civilization' && <NavLink to="/typeI" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text == 'Digital Conciousness' && <NavLink to="/conciousness" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Home' && <NavLink to="/goals" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Life' && <NavLink to="/goals/life" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'AGI' && <NavLink to="/goals/agi" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Type I Civilization' && <NavLink to="/goals/typeI" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Digital Conciousness' && <NavLink to="/goals/conciousness" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Resume' && <a href="https://harinwu.com" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</a>}
           </div>
         ))}
       </List>
       </SwipeableDrawer> }
-        <Route exact path="/" component={Home}/>
-        <Route path="/life" component={Life}/>
-        <Route path="/agi" component={AGI}/>
-        <Route path="/typeI" component={TypeI}/>
-        <Route path="/conciousness" component={Immortal}/>
+        <Route exact path="/goals" component={Home}/>
+        <Route path="/goals/life" component={Life}/>
+        <Route path="/goals/agi" component={AGI}/>
+        <Route path="/goals/typeI" component={TypeI}/>
+        <Route path="/goals/conciousness" component={Immortal}/>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

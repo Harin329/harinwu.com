@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "harinwu.com",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
