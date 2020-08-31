@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47317cecb96f7bb4cb99fe15aadbef1e",
+    "revision": "276c30245abc672dfaf5079781e069bd",
     "url": "/goals/index.html"
   },
   {
-    "revision": "f73a9ed7ad58d015911c",
+    "revision": "9fa5c944b611d891f576",
     "url": "/goals/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "fcb906c338abbc00baa7",
-    "url": "/goals/static/css/main.68cdcae9.chunk.css"
+    "revision": "15aa442c6889f4e505ed",
+    "url": "/goals/static/css/main.ccd8b424.chunk.css"
   },
   {
-    "revision": "f73a9ed7ad58d015911c",
-    "url": "/goals/static/js/2.43b96f61.chunk.js"
+    "revision": "9fa5c944b611d891f576",
+    "url": "/goals/static/js/2.8ded8d5c.chunk.js"
   },
   {
     "revision": "69c1fcfd31099edc9fe347d34e8780e7",
-    "url": "/goals/static/js/2.43b96f61.chunk.js.LICENSE.txt"
+    "url": "/goals/static/js/2.8ded8d5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcb906c338abbc00baa7",
-    "url": "/goals/static/js/main.bcbc4500.chunk.js"
+    "revision": "15aa442c6889f4e505ed",
+    "url": "/goals/static/js/main.950224b2.chunk.js"
   },
   {
     "revision": "eebb35f360dbf09f7b54",
@@ -40,20 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goals/static/media/Down.86e0c64a.gif"
   },
   {
-    "revision": "db33e70bc9dee9fa9ae9737ad83d77ba",
-    "url": "/goals/static/media/GothamBold.db33e70b.ttf"
+    "revision": "9019ab71e2d2d6cc3c9f4140cb27a618",
+    "url": "/goals/static/media/Gotham-Book.9019ab71.otf"
   },
   {
-    "revision": "b54724f54d4dd3f6796e3c4cc422f998",
-    "url": "/goals/static/media/GothamBook.b54724f5.ttf"
+    "revision": "0ff4bccb0c544c4b15f5cc47c8bdee5f",
+    "url": "/goals/static/media/Gotham-Light.0ff4bccb.otf"
   },
   {
-    "revision": "8566e2336952927984495865df90963c",
-    "url": "/goals/static/media/GothamLight.8566e233.ttf"
-  },
-  {
-    "revision": "77171d8f5b5283f9d47a3434704bf944",
-    "url": "/goals/static/media/GothamMedium.77171d8f.ttf"
+    "revision": "27a90e8757eda1edc9872eebec18ba64",
+    "url": "/goals/static/media/Gotham-Medium.27a90e87.otf"
   },
   {
     "revision": "1c28f2fbd49e64a9df9014773a8f2d67",

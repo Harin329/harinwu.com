@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/styles.css";
 import branding from "./styles/branding";
 import Link from "@material-ui/core/Link";
-import { Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import AGI from "./pages/AGI";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
@@ -14,6 +14,8 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Typography } from "@material-ui/core";
+//import { isSafari } from 'react-device-detect';
 
 function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 1224px)' });
@@ -28,7 +30,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter hashType="noslash">
       <div
         className="App"
         style={{
@@ -48,23 +50,24 @@ function App() {
           }}
         >
           <Link
-            style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
-            href="/goals"
+            style={{ flex: 1 }}
+            href="/"
           >
+            <Typography style={{ fontFamily: branding.FontMedium, color:branding.black }}>
             Harin (Hao) Wu
+            </Typography>
           </Link>
           <div
             style={{
               display: "flex",
-              fontFamily: branding.FontMedium,
               flex: 5,
               justifyContent: "center",
             }}
           >
-              <NavLink to="/goals/life" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Life</NavLink>
-              <NavLink to="/goals/agi" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>AGI</NavLink>
-              <NavLink to="/goals/typeI" style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Type I Civilization</NavLink>
-              <NavLink to="/goals/conciousness" style={{ fontFamily: branding.FontMedium, color:branding.black }}>Digital Conciousness</NavLink>
+              <NavLink to="/life" ><Typography style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Life</Typography></NavLink>
+              <NavLink to="/agi"><Typography style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>AGI</Typography></NavLink>
+              <NavLink to="/typeI"><Typography style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Type I Civilization</Typography></NavLink>
+              <NavLink to="/conciousness" ><Typography style={{ fontFamily: branding.FontMedium, marginRight: 30, color:branding.black }}>Digital Conciousness</Typography></NavLink>
           </div>
           <Link
             style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
@@ -89,24 +92,24 @@ function App() {
     >
       <List>
         {['Home', 'Life', 'AGI', 'Type I Civilization', 'Digital Conciousness', 'Resume'].map((text) => (
-          <div>
-            {text === 'Home' && <NavLink to="/goals" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text === 'Life' && <NavLink to="/goals/life" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text === 'AGI' && <NavLink to="/goals/agi" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text === 'Type I Civilization' && <NavLink to="/goals/typeI" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text === 'Digital Conciousness' && <NavLink to="/goals/conciousness" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+          <div key={text}>
+            {text === 'Home' && <NavLink to="/" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Life' && <NavLink to="/life" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'AGI' && <NavLink to="/agi" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Type I Civilization' && <NavLink to="/typeI" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Digital Conciousness' && <NavLink to="/conciousness" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
             {text === 'Resume' && <a href="https://harinwu.com" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</a>}
           </div>
         ))}
       </List>
       </SwipeableDrawer> }
-        <Route exact path="/goals" component={Home}/>
-        <Route path="/goals/life" component={Life}/>
-        <Route path="/goals/agi" component={AGI}/>
-        <Route path="/goals/typeI" component={TypeI}/>
-        <Route path="/goals/conciousness" component={Immortal}/>
+        <Route exact path="/" component={Home}/>
+        <Route path="/life" component={Life}/>
+        <Route path="/agi" component={AGI}/>
+        <Route path="/typeI" component={TypeI}/>
+        <Route path="/conciousness" component={Immortal}/>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

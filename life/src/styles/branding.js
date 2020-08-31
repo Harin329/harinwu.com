@@ -1,6 +1,5 @@
 export default {
   FontRegular: "Gotham-Book",
-  FontBold: "Gotham-Bold",
   FontLight: "Gotham-Light",
   FontMedium: "Gotham-Medium",
   snapConfig: {
@@ -24,6 +23,7 @@ export default {
   black: "#393c41",
   gray: "#5c5e62",
   blue: "#0055B7",
+  green: "#228B22",
   seeMoreButton: {
     display: "flex",
     alignItems: "center",
@@ -33,9 +33,6 @@ export default {
     borderRadius: 100,
     backgroundColor: "rgba(0,0,0, 0.7)",
     color: "#ffffff",
-    fontFamily: "Gotham-Medium",
-    paddingTop: 10,
-    fontSize: 12,
     margin: 5,
   },
   drawerButton: {
@@ -45,9 +42,7 @@ export default {
     width: 200,
     height: "50px",
     fontFamily: "Gotham-Medium",
-    paddingTop: 10,
     fontSize: 12,
     color: "#393c41",
   },
-  linkText: { cursor: "pointer", color: "#0055B7" },
 };

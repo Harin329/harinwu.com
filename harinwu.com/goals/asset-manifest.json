@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goals/static/css/main.68cdcae9.chunk.css",
-    "main.js": "/goals/static/js/main.bcbc4500.chunk.js",
-    "main.js.map": "/goals/static/js/main.bcbc4500.chunk.js.map",
+    "main.css": "/goals/static/css/main.ccd8b424.chunk.css",
+    "main.js": "/goals/static/js/main.950224b2.chunk.js",
+    "main.js.map": "/goals/static/js/main.950224b2.chunk.js.map",
     "runtime-main.js": "/goals/static/js/runtime-main.243f3d10.js",
     "runtime-main.js.map": "/goals/static/js/runtime-main.243f3d10.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/goals/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.43b96f61.chunk.js": "/goals/static/js/2.43b96f61.chunk.js",
-    "static/js/2.43b96f61.chunk.js.map": "/goals/static/js/2.43b96f61.chunk.js.map",
+    "static/js/2.8ded8d5c.chunk.js": "/goals/static/js/2.8ded8d5c.chunk.js",
+    "static/js/2.8ded8d5c.chunk.js.map": "/goals/static/js/2.8ded8d5c.chunk.js.map",
     "index.html": "/goals/index.html",
-    "precache-manifest.64605725c687dfa444a7aa96637aee93.js": "/goals/precache-manifest.64605725c687dfa444a7aa96637aee93.js",
+    "precache-manifest.5da792b02243345e28d5288e67615064.js": "/goals/precache-manifest.5da792b02243345e28d5288e67615064.js",
     "service-worker.js": "/goals/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/goals/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.68cdcae9.chunk.css.map": "/goals/static/css/main.68cdcae9.chunk.css.map",
-    "static/js/2.43b96f61.chunk.js.LICENSE.txt": "/goals/static/js/2.43b96f61.chunk.js.LICENSE.txt",
+    "static/css/main.ccd8b424.chunk.css.map": "/goals/static/css/main.ccd8b424.chunk.css.map",
+    "static/js/2.8ded8d5c.chunk.js.LICENSE.txt": "/goals/static/js/2.8ded8d5c.chunk.js.LICENSE.txt",
     "static/media/BlackDown.gif": "/goals/static/media/BlackDown.e7fccebf.gif",
     "static/media/Code.png": "/goals/static/media/Code.1dae0219.png",
     "static/media/Down.gif": "/goals/static/media/Down.86e0c64a.gif",
-    "static/media/index.css": "/goals/static/media/GothamMedium.77171d8f.ttf",
+    "static/media/index.css": "/goals/static/media/Gotham-Medium.27a90e87.otf",
     "static/media/HarinLong.jpg": "/goals/static/media/HarinLong.1c28f2fb.jpg",
     "static/media/Infinity.jpg": "/goals/static/media/Infinity.a5a65493.jpg",
     "static/media/ProToGo.png": "/goals/static/media/ProToGo.6a532f4b.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.243f3d10.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.43b96f61.chunk.js",
-    "static/css/main.68cdcae9.chunk.css",
-    "static/js/main.bcbc4500.chunk.js"
+    "static/js/2.8ded8d5c.chunk.js",
+    "static/css/main.ccd8b424.chunk.css",
+    "static/js/main.950224b2.chunk.js"
   ]
 }

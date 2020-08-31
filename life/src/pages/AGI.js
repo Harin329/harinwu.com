@@ -27,14 +27,14 @@ import Col from "react-bootstrap/Col";
 import { db, firestore, auth } from "../services/firebase";
 import { v4 as uuidv4 } from "uuid";
 import { colors } from "@material-ui/core";
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import { useMediaQuery } from 'react-responsive'
+import Timeline from "@material-ui/lab/Timeline";
+import TimelineItem from "@material-ui/lab/TimelineItem";
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
+import TimelineConnector from "@material-ui/lab/TimelineConnector";
+import TimelineContent from "@material-ui/lab/TimelineContent";
+import TimelineDot from "@material-ui/lab/TimelineDot";
+import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
+import { useMediaQuery } from "react-responsive";
 
 function callback() {
   console.log("Snapped");
@@ -42,83 +42,119 @@ function callback() {
 
 function AGI() {
   const containerRef = useRef(null);
-  const isMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   useEffect(() => {
-    const element = document.getElementById("container");
-    const snapObject = new ScrollSnap(element, branding.snapConfig);
-    snapObject.bind(callback);
+    if (!isMobile) {
+      const element = document.getElementById("container");
+      const snapObject = new ScrollSnap(element, branding.snapConfig);
+      snapObject.bind(callback);
+    }
   }, []);
 
   return (
-     <div id="container" ref={containerRef}>
-        <div className="page first-page">
+    <div id="container" ref={containerRef}>
+      <div
+        className={isMobile ? "" : "page first-page"}
+        style={{ marginTop: isMobile ? 30 : 0 }}
+      >
         <div>
-        <p style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 28 : 36, marginTop: 100}}>
-              Artificial General Intelligence<br />
-              <p
-                style={{
-                  fontFamily: branding.FontRegular,
-                  fontSize: isMobile ? 12 : 16,
-                  color: branding.gray,
-                }}
-              >
-                The Final Invention of Humanity
-              </p>
+          <p
+            style={{
+              fontFamily: branding.FontMedium,
+              fontSize: isMobile ? 24 : 36,
+              marginTop: 100,
+            }}
+          >
+            Artificial General Intelligence
+            <br />
+            <p
+              style={{
+                fontFamily: branding.FontRegular,
+                fontSize: isMobile ? 12 : 16,
+                color: branding.gray,
+                marginLeft: "5%",
+                marginRight: "5%",
+              }}
+            >
+              The Final Invention of Humanity
             </p>
-          <p style={{marginRight: isMobile ? "10%" : "20%", marginLeft: isMobile ? "10%" : "20%", fontSize: isMobile ? 12 : 16}}>
-            As a devoted football fan, I watched Messi create seemingly impossible goals as my jaws dropped. Identically, I felt the same about the breakthroughs in the 
-            AI community, with new applications imagined and limits consistently broken.
-            Yet, the topic still has so much uncertainty, being simultaneously underestimated and overestimated. Even less is known of
-          the singularity point, the point in time where we create a strong AI. The technology already influences our world, from self driving cars and writing code to
-          optimization and prediction. I see it as an exciting opportunity to take humanity to the next level, but there is much to learn, and every step
-          must be carefully taken. 
-            </p>
-            Today
-        <Timeline align="alternate">
-        <TimelineItem>
-          <TimelineOppositeContent>
-            <Typography color="textSecondary">Current</Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Typography  style={{ display:'flex', alignItems:"left"}}>Reinforcement Learning Based Chatbot</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            <Typography color="textSecondary"></Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Typography>3D Printed Autonomous Following Drone</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            <Typography color="textSecondary"></Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent  style={{ display:'flex', alignItems:"left"}}>
-            <Typography>Sound Driven AI Program</Typography>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
-      Artificial General Intelligence
-      <br/>
-      Consistently Passing the Turing Test, Indistinguishable from Human
-      </div>
+          </p>
+          <p
+            style={{
+              marginRight: isMobile ? "10%" : "20%",
+              marginLeft: isMobile ? "10%" : "20%",
+              fontSize: isMobile ? 12 : 16,
+            }}
+          >
+            As a devoted football fan, I watched Messi create seemingly
+            impossible goals as my jaws dropped. Identically, I felt the same
+            about the breakthroughs in the AI community, with new applications
+            imagined and limits consistently broken. Yet, the topic still has so
+            much uncertainty, being simultaneously underestimated and
+            overestimated. Even less is known of the singularity point, the
+            point in time where we create a strong AI. The technology already
+            influences our world, from self driving cars and writing code to
+            optimization and prediction. I see it as an exciting opportunity to
+            take humanity to the next level, but there is much to learn, and
+            every step must be carefully taken.
+          </p>
+          Today
+          <Timeline align="alternate">
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <Typography
+                  color="textSecondary"
+                  style={{ fontSize: isMobile ? 12 : 16 }}
+                >
+                  Current
+                </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator style={{ color: branding.green }}>
+                <TimelineDot color="inherit" />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent style={{ display: "flex", alignItems: "left" }}>
+                <Typography style={{ fontSize: isMobile ? 12 : 16 }}>
+                  Reinforcement Learning Based Chatbot
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <Typography color="textSecondary"></Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Typography style={{ fontSize: isMobile ? 12 : 16 }}>
+                  3D Printed Autonomous Following Drone
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <Typography color="textSecondary"></Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent style={{ display: "flex", alignItems: "left" }}>
+                <Typography style={{ fontSize: isMobile ? 12 : 16 }}>
+                  Sound Driven AI Program
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
+          Artificial General Intelligence
+          <br />
+          Consistently Passing the Turing Test, Indistinguishable from Human
         </div>
       </div>
+    </div>
   );
 }
 

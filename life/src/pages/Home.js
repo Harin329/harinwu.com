@@ -4,6 +4,8 @@ import branding from "../styles/branding";
 import ScrollSnap from "scroll-snap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
+import { Typography } from "@material-ui/core";
+import { useMediaQuery } from "react-responsive";
 
 function callback() {
   console.log("Snapped");
@@ -11,6 +13,7 @@ function callback() {
 
 function Home() {
   const containerRef = useRef(null);
+  const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   useEffect(() => {
     const element = document.getElementById("container");
@@ -68,15 +71,15 @@ function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "50%",
+              width: "70%",
               height: "150px",
               borderRadius: 5,
               color: branding.black,
             }}
           >
-            <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
+            <Typography style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 24 : 36 }}>
               Harin (Hao) Wu <br />
-              <p
+              <Typography
                 style={{
                   fontFamily: branding.FontRegular,
                   fontSize: 16,
@@ -84,8 +87,8 @@ function Home() {
                 }}
               >
                 My Goals and Dreams
-              </p>
-            </p>
+              </Typography>
+            </Typography>
           </div>
         </div>
         <div
@@ -99,7 +102,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/goals/life" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/life" style={branding.seeMoreButton}><Typography style={{fontFamily: branding.FontMedium, fontSize: 12}}>SEE MORE</Typography></NavLink>
         </div>
         </div>
       <div className="page second-page">
@@ -128,15 +131,15 @@ function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "50%",
+              width: "70%",
               height: "150px",
               borderRadius: 5,
               color: branding.black,
             }}
           >
-            <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
+            <Typography style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 24 : 36 }}>
               Artificial General Intelligence<br />
-              <p
+              <Typography
                 style={{
                   fontFamily: branding.FontRegular,
                   fontSize: 16,
@@ -144,8 +147,8 @@ function Home() {
                 }}
               >
                 The Final Invention of Humanity
-              </p>
-            </p>
+              </Typography>
+            </Typography>
           </div>
         </div>
         <div
@@ -159,7 +162,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/goals/agi" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/agi" style={branding.seeMoreButton}><Typography style={{fontFamily: branding.FontMedium, fontSize: 12}}>SEE MORE</Typography></NavLink>
         </div>
       
         </div>
@@ -189,15 +192,15 @@ function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "50%",
+              width: "70%",
               height: "150px",
               borderRadius: 5,
               color: branding.black,
             }}
           >
-            <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
+            <Typography style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 24 : 36 }}>
               Type 1 Civilization<br />
-              <p
+              <Typography
                 style={{
                   fontFamily: branding.FontRegular,
                   fontSize: 16,
@@ -205,8 +208,8 @@ function Home() {
                 }}
               >
                 Becoming a Planetary Civilization, Controlling All Energy on Earth
-              </p>
-            </p>
+              </Typography>
+            </Typography>
           </div>
         </div>
         <div
@@ -220,7 +223,7 @@ function Home() {
             height: "150px",
           }}
         >
-          <NavLink to="/goals/typeI" style={branding.seeMoreButton}>SEE MORE</NavLink>
+          <NavLink to="/typeI" style={branding.seeMoreButton}><Typography style={{fontFamily: branding.FontMedium, fontSize: 12}}>SEE MORE</Typography></NavLink>
         </div>
       
       </div>
@@ -250,15 +253,15 @@ function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "50%",
+              width: "70%",
               height: "150px",
               borderRadius: 5,
               color: branding.black,
             }}
           >
-            <p style={{ fontFamily: branding.FontMedium, fontSize: 36 }}>
+            <Typography style={{ fontFamily: branding.FontMedium, fontSize: isMobile ? 24 : 36 }}>
               Digital Conciousness<br />
-              <p
+              <Typography
                 style={{
                   fontFamily: branding.FontRegular,
                   fontSize: 16,
@@ -266,8 +269,8 @@ function Home() {
                 }}
               >
                 Understanding the Human Brain, Mind Uploading, Digital Immortality
-              </p>
-            </p>
+              </Typography>
+            </Typography>
           </div>
         </div>
         <div
@@ -281,7 +284,7 @@ function Home() {
             height: "150px",
           }}
         >
-            <NavLink to="/goals/conciousness" style={branding.seeMoreButton}>SEE MORE</NavLink>
+            <NavLink to="/conciousness" style={branding.seeMoreButton}><Typography style={{fontFamily: branding.FontMedium, fontSize: 12}}>SEE MORE</Typography></NavLink>
         </div>
       
       </div>

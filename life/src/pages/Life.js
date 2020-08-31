@@ -12,6 +12,7 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import Typography from "@material-ui/core/Typography";
 import { useMediaQuery } from "react-responsive";
+import { Button } from "@material-ui/core";
 
 function callback() {
   console.log("Snapped");
@@ -25,19 +26,21 @@ function Life() {
   const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   useEffect(() => {
-    const element = document.getElementById("container");
-    const snapObject = new ScrollSnap(element, branding.snapConfig);
-    snapObject.bind(callback);
+    if (!isMobile) {
+      const element = document.getElementById("container");
+      const snapObject = new ScrollSnap(element, branding.snapConfig);
+      snapObject.bind(callback);
+    }
   }, []);
 
   return (
     <div id="container" ref={containerRef}>
-      <div className="page first-page">
+      <div className={isMobile ? "" : "page first-page"} style={{marginTop: isMobile ? 30 : 0}}>
         <div>
           <p
             style={{
               fontFamily: branding.FontMedium,
-              fontSize: isMobile ? 28 : 36,
+              fontSize: isMobile ? 24 : 36,
             }}
           >
             Life <br />
@@ -72,26 +75,26 @@ function Life() {
           <Timeline align="alternate">
             <TimelineItem>
               <TimelineOppositeContent>
-                <Typography color="textSecondary">Current</Typography>
+                <Typography color="textSecondary" style={{fontSize: isMobile ? 12 : 16,}}>Current</Typography>
               </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
+              <TimelineSeparator style={{color:branding.green}}>
+                <TimelineDot color="inherit"/>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent style={{ display: "flex", alignItems: "left" }}>
-                <Typography>Full Coverage of Job Posting Skills</Typography>
+                <Typography style={{fontSize: isMobile ? 12 : 16,}}>Full Coverage of Job Posting Skills</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent>
-                <Typography color="textSecondary">Current</Typography>
+                <Typography color="textSecondary" style={{fontSize: isMobile ? 12 : 16,}}>Current</Typography>
               </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
+              <TimelineSeparator style={{color:branding.green}}>
+                <TimelineDot color="inherit"/>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                <Typography>
+                <Typography style={{fontSize: isMobile ? 12 : 16,}}>
                   Practice, Apply and Get Interview at Tesla
                 </Typography>
               </TimelineContent>
@@ -99,7 +102,7 @@ function Life() {
           </Timeline>
           Work at Tesla and Meet Elon Musk
         </div>
-        <div
+        {!isMobile && <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -120,21 +123,26 @@ function Life() {
               color: "#ffffff",
             }}
           />
-        </div>
+        </div>}
       </div>
-      <div className="page second-page">
+      <div className={isMobile ? "" : "page second-page"} style={{marginTop: isMobile ? 30 : 0}}>
         <div>
           <p
             style={{
               fontFamily: branding.FontMedium,
-              fontSize: isMobile ? 28 : 36,
+              fontSize: isMobile ? 24 : 36,
               cursor: "pointer",
+              marginLeft: "5%",
+                marginRight: "5%",
             }}
-            onClick={() => {window.location = "https://www.tesla.com/en_CA/careers/job/software-mobileengineeringinternshipspring2021and-orsummer2021-69087"}}
+            onClick={() => {
+              window.location =
+                "https://www.tesla.com/en_CA/careers/job/software-mobileengineeringinternshipspring2021and-orsummer2021-69087";
+            }}
           >
             Software - Mobile Engineering Internship - ID 69087
             <br />
-            <a
+            <p
               style={{
                 fontFamily: branding.FontRegular,
                 fontSize: isMobile ? 12 : 16,
@@ -142,36 +150,139 @@ function Life() {
               }}
             >
               Set the bar for what vehicle mobile user experience can be.
-            </a>
+            </p>
           </p>
           <p
             style={{
               fontSize: isMobile ? 12 : 16,
-              textAlign: 'left',
-              marginLeft: '1%',
-              marginLeft: '1%'
+              textAlign: "left",
+              marginLeft: "5%",
+              marginRight: "5%",
             }}
           >
-            Tesla is seeking the following: <br/>
-            <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Highly motivated mobile engineering intern <br/> 
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Create exceptional user experiences <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Strong software engineering skills <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Excellent interpersonal communication <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Collaborate with our top-notch design team and back end developers <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Design, code, and maintain mobile user experiences <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Code for performance, stability and maintainability <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Work with a cross-functional team of hardware engineers, application/UI software engineers, QA/Validation, and designers <br/>
-            <a onClick={() => {ubc.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Currently working towards a BS, MS, or advanced degree in a relevant engineering program such as Computer Science <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Familiar with Objective-C or Android, JavaScript. Experience with React/React Native is preferred <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Excellent grasp of fundamental computer science concepts, good at solving complex technical problems <br/>
-            <a onClick={() => {tastebuds.current.scrollIntoView(false, { behavior: 'smooth' }) }} style={branding.linkText}>See Latest</a> • Experience using common design patterns. High standards for code quality, maintainability, and performance <br/>
+            Tesla is seeking the following: <br />
+            <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Highly motivated mobile engineering intern <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Create exceptional user experiences <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Strong software engineering skills <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Excellent interpersonal communication <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Collaborate with our top-notch design team and back end developers{" "}
+            <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Design, code, and maintain mobile user experiences <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Code for performance, stability and maintainability <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Work with a cross-functional team of hardware engineers,
+            application/UI software engineers, QA/Validation, and designers{" "}
+            <br />
+            <Button
+              onClick={() => {
+                ubc.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Currently working towards a BS, MS, or advanced degree in a
+            relevant engineering program such as Computer Science <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Familiar with Objective-C or Android, JavaScript. Experience with
+            React/React Native is preferred <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Excellent grasp of fundamental computer science concepts, good at
+            solving complex technical problems <br />
+            <Button
+              onClick={() => {
+                tastebuds.current.scrollIntoView(false, { behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer", color: "#0055B7", padding: 0, fontFamily:branding.FontRegular, fontSize: isMobile ? 12 : 16,}}
+            >
+              See Latest
+            </Button>{" "}
+            • Experience using common design patterns. High standards for code
+            quality, maintainability, and performance <br />
           </p>
         </div>
       </div>
-      <div className="page third-page" ref={tastebuds}>
+      <div className={isMobile ? "" : "page third-page"} style={{marginTop: isMobile ? 30 : 0}} ref={tastebuds}>
         <div>
-        <img
+          <img
             src={require("../assets/TasteBuds.png")}
             alt="Tastebuds"
             style={{
@@ -185,7 +296,7 @@ function Life() {
           <p
             style={{
               fontFamily: branding.FontMedium,
-              fontSize: isMobile ? 28 : 36,
+              fontSize: isMobile ? 24 : 36,
             }}
           >
             Tastebuds
@@ -194,10 +305,12 @@ function Life() {
               style={{
                 fontFamily: branding.FontRegular,
                 fontSize: isMobile ? 12 : 16,
-                cursor: "pointer", 
-                color: "#0055B7"
+                cursor: "pointer",
+                color: "#0055B7",
               }}
-              onClick={() => {window.location = "https://harinwu.com/works/Tastebuds.html"}}
+              onClick={() => {
+                window.location = "https://harinwu.com/works/Tastebuds.html";
+              }}
             >
               Full Details
             </p>
@@ -205,29 +318,43 @@ function Life() {
           <p
             style={{
               fontSize: isMobile ? 12 : 16,
-              textAlign: 'left',
-              marginLeft: '1%',
-              marginLeft: '1%'
+              textAlign: "left",
+              marginLeft: "5%",
+              marginRight: "5%",
             }}
           >
-            • Highly motivated, leading mobile engineering and general development with majority of spare time. <br/> 
-            • Creating exceptional user experiences, ensuring simple and effective interfaces. <br/>
-            • Strong software engineering skills, planning system architecture and creating many internal tools. <br/>
-            • Excellent interpersonal communication, communicating with team members and potential restaurant partners. <br/>
-            • Collaborating with a skilled team of 10, including designers, back end developers, web developers and business members. <br/>
-            • Designing, coding, and maintaining mobile user experiences for 1500+ users. <br/>
-            • Coding for performance, stability and maintainability, allowed transition from native iOS/Android to cross platform. <br/>
-            • Working with a cross-functional team of application/UI software engineers, QA/Validation, and designers daily. <br/>
-            • Proficient with React, React Native, Android and JavaScript. Familiar with Objective-C. Bonus proficiency with Swift and Kotlin. <br/>
-            • Excellent grasp of fundamental computer science concepts, good at solving complex technical problems
-             including,<br/> recommendation algorithms, search indexing and location queries. In house solutions saving thousands of dollars annually. <br/>
-            • Experience using common design patterns. High standards for code quality, maintainability, and performance. <br/>
+            • Highly motivated, leading mobile engineering and general
+            development with majority of spare time. <br />
+            • Creating exceptional user experiences, ensuring simple and
+            effective interfaces. <br />
+            • Strong software engineering skills, planning system architecture
+            and creating many internal tools. <br />
+            • Excellent interpersonal communication, communicating with team
+            members and potential restaurant partners. <br />
+            • Collaborating with a skilled team of 10, including designers, back
+            end developers, web developers and business members. <br />
+            • Designing, coding, and maintaining mobile user experiences for
+            1500+ users. <br />
+            • Coding for performance, stability and maintainability, allowed
+            transition from native iOS/Android to cross platform. <br />
+            • Working with a cross-functional team of application/UI software
+            engineers, QA/Validation, and designers daily. <br />
+            • Proficient with React, React Native, Android and JavaScript.
+            Familiar with Objective-C. Bonus proficiency with Swift and Kotlin.{" "}
+            <br />
+            • Excellent grasp of fundamental computer science concepts, good at
+            solving complex technical problems including,
+            <br /> recommendation algorithms, search indexing and location
+            queries. In house solutions saving thousands of dollars annually.{" "}
+            <br />
+            • Experience using common design patterns. High standards for code
+            quality, maintainability, and performance. <br />
           </p>
         </div>
       </div>
-      <div className="page third-page" ref={ubc}>
+      <div className={isMobile ? "" : "page third-page"} style={{marginTop: isMobile ? 30 : 0}} ref={ubc}>
         <div>
-        <img
+          <img
             src={require("../assets/UBC.jpg")}
             alt="UBC"
             style={{
@@ -241,7 +368,7 @@ function Life() {
           <p
             style={{
               fontFamily: branding.FontMedium,
-              fontSize: isMobile ? 28 : 36,
+              fontSize: isMobile ? 24 : 36,
             }}
           >
             UBC
@@ -250,10 +377,12 @@ function Life() {
               style={{
                 fontFamily: branding.FontRegular,
                 fontSize: isMobile ? 12 : 16,
-                cursor: "pointer", 
-                color: "#0055B7" 
+                cursor: "pointer",
+                color: "#0055B7",
               }}
-              onClick={() => {window.location = "https://harinwu.com/works/UBC.html"}}
+              onClick={() => {
+                window.location = "https://harinwu.com/works/UBC.html";
+              }}
             >
               Full Details
             </p>
@@ -261,22 +390,27 @@ function Life() {
           <p
             style={{
               fontSize: isMobile ? 12 : 16,
-              textAlign: 'left',
-              marginLeft: '1%',
-              marginLeft: '1%'
+              textAlign: "left",
+              marginLeft: "5%",
+              marginRight: "5%",
             }}
           >
-            • Coursework on coding for performance, stability and maintainability. <br/>
-            • Currently working towards a Bachelor of Science in Computer Science. <br/>
-            • Excellent grasp of fundamental computer science concepts, GPA of 3.85 on related courses. <br/>
-            • Challenging myself with difficult course like Honours Physics and multiple new languages, GPA of 3.5 overall. <br/>
-            • Experience using common design patterns. High standards for code quality, maintainability, and performance. <br/>
+            • Coursework on coding for performance, stability and
+            maintainability. <br />
+            • Currently working towards a Bachelor of Science in Computer
+            Science. <br />
+            • Excellent grasp of fundamental computer science concepts, GPA of
+            3.85 on related courses. <br />
+            • Challenging myself with difficult course like Honours Physics and
+            multiple new languages, GPA of 3.5 overall. <br />
+            • Experience using common design patterns. High standards for code
+            quality, maintainability, and performance. <br />
           </p>
         </div>
       </div>
-      <div className="page third-page" ref={protogo}>
+      <div className={isMobile ? "" : "page third-page"} style={{marginTop: isMobile ? 30 : 0}} ref={protogo}>
         <div>
-        <img
+          <img
             src={require("../assets/ProToGo.png")}
             alt="ProToGo"
             style={{
@@ -290,7 +424,7 @@ function Life() {
           <p
             style={{
               fontFamily: branding.FontMedium,
-              fontSize: isMobile ? 28 : 36,
+              fontSize: isMobile ? 24 : 36,
             }}
           >
             ProToGo
@@ -299,10 +433,12 @@ function Life() {
               style={{
                 fontFamily: branding.FontRegular,
                 fontSize: isMobile ? 12 : 16,
-                cursor: "pointer", 
-                color: "#0055B7" 
+                cursor: "pointer",
+                color: "#0055B7",
               }}
-              onClick={() => {window.location = "https://harinwu.com/works/ProToGo.html"}}
+              onClick={() => {
+                window.location = "https://harinwu.com/works/ProToGo.html";
+              }}
             >
               Full Details
             </p>
@@ -310,20 +446,28 @@ function Life() {
           <p
             style={{
               fontSize: isMobile ? 12 : 16,
-              textAlign: 'left',
-              marginLeft: '1%',
-              marginLeft: '1%'
+              textAlign: "left",
+              marginLeft: "5%",
+              marginRight: "5%",
             }}
           >
-            • Highly committed Android developer, passionate and met all deadlines. <br/> 
-            • Created exceptional user experiences through Android Studio XML and storyboards. <br/>
-            • Strong software engineering skills, crafting reliable time-tracking and location-tracking software for construction workers.<br/>
-            • Excellent interpersonal communication, amongst team members and business partners. <br/>
-            • Collaborated with a global design team. <br/>
-            • Designed, coded, and maintained mobile user experiences.<br/>
-            • Familiarized with Android and JavaScript. <br/>
-            • Solved complex technical problems regarding location tracking. <br/>
-            • Used common design patterns, object oriented programming. <br/>
+            • Highly committed Android developer, passionate and met all
+            deadlines. <br />
+            • Created exceptional user experiences through Android Studio XML
+            and storyboards. <br />
+            • Strong software engineering skills, crafting reliable
+            time-tracking and location-tracking software for construction
+            workers.
+            <br />
+            • Excellent interpersonal communication, amongst team members and
+            business partners. <br />
+            • Collaborated with a global design team. <br />
+            • Designed, coded, and maintained mobile user experiences.
+            <br />
+            • Familiarized with Android and JavaScript. <br />
+            • Solved complex technical problems regarding location tracking.{" "}
+            <br />
+            • Used common design patterns, object oriented programming. <br />
           </p>
         </div>
       </div>
