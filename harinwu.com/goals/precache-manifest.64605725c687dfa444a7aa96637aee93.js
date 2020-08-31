@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "703ec3edd0ef698c472acde5004ac71f",
+    "revision": "47317cecb96f7bb4cb99fe15aadbef1e",
     "url": "/goals/index.html"
   },
   {
-    "revision": "5f106ebd8ea1110fdd0c",
-    "url": "/goals/static/css/2.de424728.chunk.css"
+    "revision": "f73a9ed7ad58d015911c",
+    "url": "/goals/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "2b0eae2c2536a42781c0",
+    "revision": "fcb906c338abbc00baa7",
     "url": "/goals/static/css/main.68cdcae9.chunk.css"
   },
   {
-    "revision": "5f106ebd8ea1110fdd0c",
-    "url": "/goals/static/js/2.09b47bc5.chunk.js"
+    "revision": "f73a9ed7ad58d015911c",
+    "url": "/goals/static/js/2.43b96f61.chunk.js"
   },
   {
-    "revision": "83f7a4ca2dc1bae4e5dc31473b6eef86",
-    "url": "/goals/static/js/2.09b47bc5.chunk.js.LICENSE.txt"
+    "revision": "69c1fcfd31099edc9fe347d34e8780e7",
+    "url": "/goals/static/js/2.43b96f61.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b0eae2c2536a42781c0",
-    "url": "/goals/static/js/main.0156281e.chunk.js"
+    "revision": "fcb906c338abbc00baa7",
+    "url": "/goals/static/js/main.bcbc4500.chunk.js"
   },
   {
-    "revision": "81ea05b869898c523e99",
-    "url": "/goals/static/js/runtime-main.325f7484.js"
+    "revision": "eebb35f360dbf09f7b54",
+    "url": "/goals/static/js/runtime-main.243f3d10.js"
+  },
+  {
+    "revision": "e7fccebf9c9b7db484effb0ddcc702b4",
+    "url": "/goals/static/media/BlackDown.e7fccebf.gif"
   },
   {
     "revision": "1dae02191672214afc62bf0cffea062f",
@@ -60,7 +64,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goals/static/media/Infinity.a5a65493.jpg"
   },
   {
+    "revision": "6a532f4b32255519203c4bdb977cc004",
+    "url": "/goals/static/media/ProToGo.6a532f4b.png"
+  },
+  {
+    "revision": "485797035933e2882970f8e4d780d911",
+    "url": "/goals/static/media/TasteBuds.48579703.png"
+  },
+  {
     "revision": "1b19403a587773064eebd59d38b37693",
     "url": "/goals/static/media/Type1.1b19403a.jpg"
+  },
+  {
+    "revision": "31f183e819c564fecfcd595b41ed6e49",
+    "url": "/goals/static/media/UBC.31f183e8.jpg"
   }
 ]);

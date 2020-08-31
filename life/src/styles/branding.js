@@ -23,6 +23,7 @@ export default {
   },
   black: "#393c41",
   gray: "#5c5e62",
+  blue: "#0055B7",
   seeMoreButton: {
     display: "flex",
     alignItems: "center",
@@ -46,6 +47,7 @@ export default {
     fontFamily: "Gotham-Medium",
     paddingTop: 10,
     fontSize: 12,
-    color: "#393c41"
+    color: "#393c41",
   },
+  linkText: { cursor: "pointer", color: "#0055B7" },
 };

@@ -1,6 +1,7 @@
 Seeing a lack of vision boards and life goal planners, this project attempts to create an extremely basic functional version. Future plans may include development for more users, as well as a design overhaul. However, the efficacy and simplicity of the board is currently being tested.
 
-My board can be accessed here: https://hungrii.com/harin/goals/
+My old board can be accessed here: https://hungrii.com/harin/goals/
+This current new board can be accessed here: https://harinwu.com/goals/
 
 
 
