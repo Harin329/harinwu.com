@@ -9,9 +9,22 @@
   <meta name="description" content="BusesAreUs">
   <link rel="shortcut icon" type="image/x-icon" href="./images/WebsiteIcons/Infinity.png" />
 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="../styles/harinstyles.css" />
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../components/footer.js"></script>
+  <script src="../components/header.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
 </head>
 
 <body>
@@ -19,7 +32,7 @@
     <div class="page">
       <header class="page_header">
         <p>
-          <a href="../">Home</a><span class="divider"></span> <a href="../about">About Me</a><span
+          <a href="../">Home</a><span class="divider"></span> <a href="./goals/">About Me</a><span
             class="divider"></span> <a href="../goals">Goals</a>
         </p>
       </header>
@@ -72,46 +85,7 @@
 
       </div>
 
-      <footer class="page_footer">
-        <p>
-          <a href="mailto:harinwu99@gmail.com">
-            <div>
-              <img src="../images/Gmail.png" height="30px" style="margin: 10px;" />
-            </div>
-          </a>
-
-          <a href="https://github.com/Harin329">
-            <div>
-              <img src="../images/Github.png" height="30px" style="margin: 10px;" />
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/hao-harin-wu-28a59a160">
-            <div>
-              <img src="../images/LinkedIn.png" height="30px" style="margin: 10px;" />
-            </div>
-          </a>
-
-          <a href="https://www.facebook.com/harin.wu">
-            <div>
-              <img src="../images/Facebook.png" height="35px" style="margin: 5px;" />
-            </div>
-          </a>
-          <a href="https://www.instagram.com/harinwu">
-            <div>
-              <img src="../images/Instagram.png" height="50px" style="margin-left: 5px;" />
-            </div>
-          </a>
-          <a href="https://twitter.com/harinhaowu">
-            <div>
-              <img src="../images/Twitter.svg" height="55px" style="margin: 0px;" />
-            </div>
-          </a>
-
-
-
-
-      </footer>
+      <main-footer/>
 
 
       <script>

@@ -15,7 +15,6 @@ import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Typography } from "@material-ui/core";
-//import { isSafari } from 'react-device-detect';
 
 function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 1224px)' });
@@ -51,7 +50,7 @@ function App() {
         >
           <Link
             style={{ flex: 1 }}
-            href="/"
+            href="/goals"
           >
             <Typography style={{ fontFamily: branding.FontMedium, color:branding.black }}>
             Harin (Hao) Wu
@@ -71,7 +70,7 @@ function App() {
           </div>
           <Link
             style={{ fontFamily: branding.FontMedium, flex: 1, color:branding.black }}
-            href="https://harinwu.com"
+            href="/"
           >
             Resume
           </Link>
@@ -93,12 +92,12 @@ function App() {
       <List>
         {['Home', 'Life', 'AGI', 'Type I Civilization', 'Digital Conciousness', 'Resume'].map((text) => (
           <div key={text}>
-            {text === 'Home' && <NavLink to="/" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
+            {text === 'Home' && <Link href="/goals" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</Link>}
             {text === 'Life' && <NavLink to="/life" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
             {text === 'AGI' && <NavLink to="/agi" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
             {text === 'Type I Civilization' && <NavLink to="/typeI" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
             {text === 'Digital Conciousness' && <NavLink to="/conciousness" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</NavLink>}
-            {text === 'Resume' && <a href="https://harinwu.com" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</a>}
+            {text === 'Resume' && <a href="/" onClick={toggleDrawer()} style={branding.drawerButton}>{text}</a>}
           </div>
         ))}
       </List>
