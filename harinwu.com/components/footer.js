@@ -2,7 +2,8 @@
 
 class Footer extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = ` <footer class="page_footer">
+    this.innerHTML = ` 
+    <footer class="page_footer">
     <p>
       <a href="mailto:harinwu99@gmail.com">
         <div>
@@ -38,8 +39,7 @@ class Footer extends HTMLElement {
         </div>
       </a>
       </p>
-
-  </footer>
+      </footer>
       `;
   }
 }

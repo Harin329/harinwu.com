@@ -4,13 +4,12 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = ` 
     <!-- Header -->
-    <header class="page_header">
+    
       <p>
         <a href="../">Home</a><span class="divider"></span> <a href="../goals/">About Me</a><span
           class="divider"></span> <a onclick="document.getElementById('downloadResume').style.display='block'"
           style="cursor: pointer;">Resume</a>
       </p>
-    </header>
       
       <!-- Resume Modal -->
       <div id="downloadResume" class="w3-modal w3-animate-opacity">
