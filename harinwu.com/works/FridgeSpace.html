@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FridgeSpace</title>
+  <meta name="description" content="FridgeSpace">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../components/footer.js"></script>
+  <script src="../components/header.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header/>
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">FridgeSpace</h1>
+            <p class="work-page__time"><time datetime="2020-02-01T00:00:00+00:00" itemprop="datePublished">Jan
+                2021</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <img src="../images/Hackathon/FridgeSpace.png" />
+              <img src="../images/Hackathon/FridgeSpaceProto.png" />
+              <img src="../videos/Hackathon/FridgeSpaceDemo.gif" />
+              <a href="https://github.com/Harin329/FridgeSpace" target="_blank" class="w3-hover-text-red"><img
+                  class="OpenGithub" src="../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              <br>
+              <br>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ROLE:</p>
+              <p class="post-value">Full Stack Developer</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Swift, Python, CockroachDB, GCP</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ACCOMPLISHMENTS:</p>
+              <p class="post-value">Hack The North 2020++ Finalists!</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">Hack The North 2020++</p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">Inspiration:</p>
+              <p>Based on the observation that most household waste is avoidable, and most people donate out of convenience, FridgeSpace is a service that reduces this waste by making it possible to donate food from the comfort of one’s own home. 
+              </p>
+              <p class="post-title">What it does:</p>
+              <p>FridgeSpace allows household users to locate and donate to donation hotspots such as food banks or shelters on an interactive map. Donations are as simple as snapping a photo with a machine vision camera that will label your food for you. The map also shows what other users around you are donating to incentivize more donations. There are also donation tips to educate users of what your community is in need of and ways to help out. 
+              </p>
+              <p class="post-title">How we built it:</p>
+              <p>
+                We are hosting our API <a href="http://www.fridg.space/" target="_blank" class="w3-hover-text-red">here</a>.
+                We began by creating designs for our app using Figma. At the same time, we started designing the application architecture. Once the designs were complete, we implemented the client and server in parallel. On the client-side, we used SwiftUI to create an iOS app. For the Python backend, we created the API using Flask. We used SQLAlchemy as our ORM to interact with CockroachDB.
+              </p>
+              <p class="post-title">Challenges we ran into:</p>
+              <p>The biggest challenge we had to face was learning how to use SwiftUI. Although we were familiar with both Swift and React Native, we wanted to challenge ourselves to learn something new by using SwiftUI. Ultimately, this was a great decision as we were able to pick up SwiftUI and successfully complete our app.
+              </p>
+              <p class="post-title">Accomplishments that we’re proud of:</p>
+              <p>We’re really proud of the amazing designs we created for the app. We’re also really happy that we learned so many new technologies while creating this app.
+              </p>
+              <p class="post-title">What we learned:</p>
+              <p>There were many new technologies we learned in the past 36 hours such as SwiftUI, CockroachDB, Google Cloud, and Facebook’s API. We also learned how to efficiently communicate and support each other virtually.
+              </p>
+              <p class="post-title">What's next for FridgeSpace:</p>
+              <p>Future Steps for our team include working with organizations such as food banks so they can make posts through the application itself. A logistical improvement could be partnering with Canada Post so that donation pickups and dropoffs could be more efficient and convenient for both the users and organizations.
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer/>
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
