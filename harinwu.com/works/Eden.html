@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eden</title>
+  <meta name="description" content="Eden">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../components/footer.js"></script>
+  <script src="../components/header.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header/>
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">Eden</h1>
+            <p class="work-page__time"><time datetime="2021-02-022T00:00:00+00:00" itemprop="datePublished">Feb
+                2021</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <img src="../images/Hackathon/Eden.png" />
+              <img src="../images/Hackathon/EdenProto.png" />
+              <img src="../videos/Hackathon/EdenDemo.gif" />
+              <a href="https://github.com/Harin329/Eden" target="_blank" class="w3-hover-text-red"><img
+                  class="OpenGithub" src="../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              <br>
+              <br>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ROLE:</p>
+              <p class="post-value">Full Stack Developer</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Swift, Go, CockroachDB, GCP</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ACCOMPLISHMENTS:</p>
+              <p class="post-value">SDHacks 2021 Overall Winner!</p>
+              <p class="post-value">Best use of Google Cloud!</p>
+              <p class="post-value">Tickets to Pinnacle 2021!</p>
+              <p class="post-value">Wolfram Alpha Prize!</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">SDHacks 2021</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">DEVPOST:</p>
+              <p class="post-value"><a href="https://devpost.com/software/eden-wxb6je" target="_blank" class="w3-hover-text-red">Eden</a></p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">Inspiration:</p>
+              <p>Inspired by the close-knit communities in San Diego, we created Eden, an app that helps to build green spaces in urban communities. Eden allows residents to grow plants, spend time with others in a safe and supportive environment, bring home healthy produce from the garden, and be active outdoors. These activities improve the mental health of residents while increasing the eco-capital of cities.
+              </p>
+              <p class="post-title">What it does:</p>
+              <p>Eden helps build green spaces in urban communities by allowing residents to grow plants, spend time with others in a safe and supportive environment, bring home healthy produce from the garden, and be active outdoors. This safe and fun activity contributes positively to the mental health of residents while increasing the eco-capital of cities.
+              </p>
+              <p class="post-title">How we built it:</p>
+              <p>
+                We are hosting our API <a href="http://www.iamgroot.space/" target="_blank" class="w3-hover-text-red">here</a>.
+                We began by researching the problem space and designing using Figma. We designed our app with a Go backend and Swift frontend. For the Golang backend, we created REST APIs and used GORM as our ORM to interact with CockroachDB. We used Google Cloud Platform to host our backend server, serving an endpoint with our domain iamgroot.space. Our Swift frontend uses SwiftUI and Google Maps API for displaying maps, pins and coordinates.
+
+                </p>
+              <p class="post-title">Challenges we ran into:</p>
+              <p>In terms of product design, some potential risks we foresee with this idea are theft and vandalism. We aim to mitigate these risks by creating a rotation care system to prevent jealousy and spite, and a harvest area for ripe fruits open for the public to take. In terms of working together as a team, we overcame disagreements and in doing so learned to communicate more constructively with each other.
+              </p>
+              <p class="post-title">Accomplishments that we’re proud of:</p>
+              <p>We’re really proud of the amazing designs we created for the app. We’re also really happy that we learned so many new technologies in the process.
+              </p>
+              <p class="post-title">What's next for FridgeSpace:</p>
+              <p>Future steps for Eden include creating an administration portal for those who run the community gardens and help them organize and keep track of government paperwork as well as update them on the status of the gardens. We also plan to improve the user flow and refine key features.
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer/>
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
