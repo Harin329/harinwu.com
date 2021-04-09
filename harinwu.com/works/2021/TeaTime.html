@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TeaTime</title>
+  <meta name="description" content="TeaTime">
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../../components/footer.js"></script>
+  <script src="../../components/header.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header/>
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">TeaTime</h1>
+            <p class="work-page__time"><time datetime="2021-03-01T00:00:00+00:00" itemprop="datePublished">Mar
+                2021</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <img src="../../images/2021/TeaTime.png" />
+              <img src="../../images/2021/TeaTimeProto.png" />
+              <img src="../../videos/Hackathon/TeaTimeDemo.gif" />
+              <a href="https://github.com/Harin329/TeaTime" target="_blank" class="w3-hover-text-red"><img
+                  class="OpenGithub" src="../../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              <br>
+              <br>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ROLE:</p>
+              <p class="post-value">Full Stack Developer</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">React Native, Firebase</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ACCOMPLISHMENTS:</p>
+              <p class="post-value">Fully Functional Prototype with a Two Member Team!</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">SFHacks 2021</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">DEVPOST:</p>
+              <p class="post-value"><a href="https://devpost.com/software/teatime-760bwx" target="_blank" class="w3-hover-text-red">TeaTime</a></p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">Inspiration:</p>
+              <p>In this digital age, many people struggle with a lack of face-to-face interaction, leaving a huge impact on their mental health. TeaTime is a platform where users can communicate verbally no matter where or when they are.
+              </p>
+              <p class="post-title">What it does:</p>
+              <p>TeaTime generates exciting discussions by providing a selection of trending topics to consider. Beginning your conversation is as easy as selecting a story of interest and recording your thoughts. Friends and family can endorse your opinion by voting for the best response and send it to the global page. Worldwide sharing makes it simple to connect with like-minded individuals and further the discussion. Everyone is encouraged to speak up and share before they listen to what others have to say as voice notes are locked to users before they have recorded themselves.
+              </p>
+              <p class="post-title">How we built it:</p>
+              <p>
+                We started by showing our designer the ins and outs of Figma, which she learned extremely quickly. While she was putting her skills to use, I rapidly started with our React Native app, building the basic key components like login, signup, and firebase connections. As a two-person team, the rapid prototyping features of Firebase were put to the test, as we used Authentication, Cloud Firestore, Cloud Storage, and Cloud Functions. We were able to implement the designs over to our app quickly and make it FULLY functional. The app supports full login, uses a cloud function to grab daily news articles from various news sources, allows users to make audio recordings which are then stored on cloud storage for global sharing and playback. We also leverage Cloud Firestore to implement a full real-time chat for every group chat. The user is also able to create groups, and join groups by random codes, thanks to the advanced querying features paired with our efficient data structure. There is also an implementation of Azure Speech API for detecting the language of the audio recording, through a Cloud Function storage trigger.
+              </p>
+              <p class="post-title">Challenges we ran into:</p>
+              <p>A big challenge we ran into was with using speech-language detection. Our initial approach with GCP wasn’t detecting the audio recordings from our app. We quickly switched over to try Azure’s Speech API. We also ran into many issues implementing the UI. Most notably, the mosaic wall in the global feed required a lot of styling and calculation of the card positions. We also had members who are brand new to hackathons and design, so there was a rapid learning curve to get them on track and familiar with the whole process.
+              </p>
+              <p class="post-title">Accomplishments that we’re proud of:</p>
+              <p>We’re really proud of the designs from someone new to design. We’re also really happy with the full implementation of the app as a two-person team. Getting the audio to be stored and played back while implementing a real-time chat seemed like an incredibly daunting task initially, and we’re proud to say we completed both.
+              </p>
+              <p class="post-title">What we learned:</p>
+              <p>Many new front-end implementation skills were learned, from capturing device audio to mosaic feeds and real-time chats. We also learned the Azure SDK library, as the first time we explored them.
+              </p>
+              <p class="post-title">What's next for TeaTime:</p>
+              <p>Future steps include perfecting the language detection for audio recordings. Our current deployment has issues identifying some sounds and isn’t as great as we'd like. We would love to perfect this. Otherwise, as the app is near feature complete, we plan to polish various aspects like including logistical pages (settings, legal, license, edit profile), and aim to get it published on both Apple and Android App Stores. Furthermore, we would like to convert our firebase into a Node.js backend to make the application more scalable moving forward.
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer/>
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
