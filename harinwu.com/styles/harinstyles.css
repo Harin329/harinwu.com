@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.rowBlock {
+  display: inline-block;
+}
+
 
 
 .tablink {
