@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import TypeI from "./pages/TypeI";
 import Immortal from "./pages/Immortal";
 import Life from "./pages/Life";
+import Elon from "./pages/Legacy/Elon";
 import { useMediaQuery } from 'react-responsive'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import IconButton from '@material-ui/core/IconButton';
@@ -107,6 +108,7 @@ function App() {
         <Route path="/agi" component={AGI}/>
         <Route path="/typeI" component={TypeI}/>
         <Route path="/conciousness" component={Immortal}/>
+        <Route path="/elon" component={Elon}/>
       </div>
     </HashRouter>
   );

@@ -107,7 +107,7 @@ function AGI() {
                   color="textSecondary"
                   style={{ fontSize: isMobile ? 12 : 16 }}
                 >
-                  Current
+                  Backlog
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator style={{ color: branding.green }}>

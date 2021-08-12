@@ -1,26 +1,29 @@
 {
   "files": {
     "main.css": "/goals/static/css/main.ccd8b424.chunk.css",
-    "main.js": "/goals/static/js/main.2ab56967.chunk.js",
-    "main.js.map": "/goals/static/js/main.2ab56967.chunk.js.map",
+    "main.js": "/goals/static/js/main.71307952.chunk.js",
+    "main.js.map": "/goals/static/js/main.71307952.chunk.js.map",
     "runtime-main.js": "/goals/static/js/runtime-main.243f3d10.js",
     "runtime-main.js.map": "/goals/static/js/runtime-main.243f3d10.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/goals/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.37b6fd9f.chunk.js": "/goals/static/js/2.37b6fd9f.chunk.js",
-    "static/js/2.37b6fd9f.chunk.js.map": "/goals/static/js/2.37b6fd9f.chunk.js.map",
+    "static/js/2.07e7cf97.chunk.js": "/goals/static/js/2.07e7cf97.chunk.js",
+    "static/js/2.07e7cf97.chunk.js.map": "/goals/static/js/2.07e7cf97.chunk.js.map",
     "index.html": "/goals/index.html",
-    "precache-manifest.ddaf0672a2f97755766374d506975f5b.js": "/goals/precache-manifest.ddaf0672a2f97755766374d506975f5b.js",
+    "precache-manifest.329b8651ec419f0d7fca83fb032dccd4.js": "/goals/precache-manifest.329b8651ec419f0d7fca83fb032dccd4.js",
     "service-worker.js": "/goals/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/goals/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.ccd8b424.chunk.css.map": "/goals/static/css/main.ccd8b424.chunk.css.map",
-    "static/js/2.37b6fd9f.chunk.js.LICENSE.txt": "/goals/static/js/2.37b6fd9f.chunk.js.LICENSE.txt",
+    "static/js/2.07e7cf97.chunk.js.LICENSE.txt": "/goals/static/js/2.07e7cf97.chunk.js.LICENSE.txt",
     "static/media/BlackDown.gif": "/goals/static/media/BlackDown.e7fccebf.gif",
     "static/media/Code.png": "/goals/static/media/Code.1dae0219.png",
     "static/media/Down.gif": "/goals/static/media/Down.86e0c64a.gif",
+    "static/media/Github.png": "/goals/static/media/Github.762eac70.png",
     "static/media/index.css": "/goals/static/media/Gotham-Medium.27a90e87.otf",
     "static/media/HarinLong.jpg": "/goals/static/media/HarinLong.1c28f2fb.jpg",
     "static/media/Infinity.jpg": "/goals/static/media/Infinity.a5a65493.jpg",
+    "static/media/NeurIPS.png": "/goals/static/media/NeurIPS.2ebc6e06.png",
     "static/media/ProToGo.png": "/goals/static/media/ProToGo.6a532f4b.png",
+    "static/media/Python.png": "/goals/static/media/Python.b7f56ac7.png",
     "static/media/TasteBuds.png": "/goals/static/media/TasteBuds.48579703.png",
     "static/media/Type1.jpg": "/goals/static/media/Type1.1b19403a.jpg",
     "static/media/UBC.jpg": "/goals/static/media/UBC.31f183e8.jpg"
@@ -28,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.243f3d10.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.37b6fd9f.chunk.js",
+    "static/js/2.07e7cf97.chunk.js",
     "static/css/main.ccd8b424.chunk.css",
-    "static/js/main.2ab56967.chunk.js"
+    "static/js/main.71307952.chunk.js"
   ]
 }
