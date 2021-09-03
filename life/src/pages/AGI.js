@@ -151,7 +151,7 @@ function AGI() {
           </Timeline>
           Artificial General Intelligence
           <br />
-          Consistently Passing the Turing Test, Indistinguishable from Human
+          Reaching the Singularity
         </div>
       </div>
     </div>

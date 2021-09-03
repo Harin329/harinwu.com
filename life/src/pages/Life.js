@@ -77,7 +77,7 @@ function Life() {
                   color="textSecondary"
                   style={{ fontSize: isMobile ? 12 : 16 }}
                 >
-                  Startup
+                  Portfolio
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator style={{ color: branding.green }}>
@@ -86,7 +86,7 @@ function Life() {
               </TimelineSeparator>
               <TimelineContent style={{ display: "flex", alignItems: "left" }}>
                 <Typography style={{ fontSize: isMobile ? 12 : 16 }}>
-                  Hungrii Inc.
+                  UBC Launchpad / Clubs / Projects
                 </Typography>
               </TimelineContent>
             </TimelineItem>
@@ -115,7 +115,7 @@ function Life() {
                   color="textSecondary"
                   style={{ fontSize: isMobile ? 12 : 16 }}
                 >
-                  Portfolio
+                  Startup
                 </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator style={{ color: branding.green }}>
@@ -124,12 +124,12 @@ function Life() {
               </TimelineSeparator>
               <TimelineContent style={{ display: "flex", alignItems: "left" }}>
                 <Typography style={{ fontSize: isMobile ? 12 : 16 }}>
-                  Open Source / UBC Launchpad
+                  Hungrii Inc.
                 </Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-          Work at Tesla and Meet Elon Musk
+          AGI, Human Advancement, Digital Conciousness
         </div>
         {!isMobile && (
           <div
@@ -190,7 +190,7 @@ function Life() {
               marginRight: "5%",
             }}
           >
-            The following are the categories I am focused on with regards to my exploration and curiosity: <br />
+            The following are the categories I am focused on in my work for curious exploration: <br />
             <br />
             <Button
               onClick={() => {
