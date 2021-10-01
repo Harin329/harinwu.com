@@ -1,6 +1,13 @@
 # harinwu.com
- Personal Website
+Personal Website
 
-The 'harinwu.com' folder contains the HTML base, the html resume files and the build for the LIFE goals webapp.
+## Structure
 
-The 'life' folder containts the React.js webapp. "Yarn build" and copy paste into harinwu.com/goals/, no CI/CD pipeline was made for this :(
+### harinwu.com
+This folder contains the HTML base, resume files and the deployment builds for all the webapps. No CI/CD pipeline was made for this project :(
+
+### life
+This folder containts the React.JS life webapp. "Yarn build" and copy paste into harinwu.com/goals/
+
+### invest
+This folder containts the React.JS invest webapp. "Yarn build" and copy paste into harinwu.com/squod/
