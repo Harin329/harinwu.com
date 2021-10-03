@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spotlight</title>
+  <meta name="description" content="Spotlight">
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../../components/footer.js"></script>
+  <script src="../../components/header.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header />
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">Spotlight</h1>
+            <p class="work-page__time"><time datetime="2021-09-022T00:00:00+00:00" itemprop="datePublished">Sep
+                2021</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <img src="../../images/2021/Spotlight.png" />
+              <img src="../../images/2021/Spotlight1.png" />
+              <img src="../../images/2021/Spotlight2.png" />
+              <img src="../../images/2021/Spotlight3.png" />
+              <img src="../../images/2021/Spotlight4.png" />
+              <img src="../../images/2021/Spotlight5.png" />
+              <img src="../../images/2021/SpotlightProto.png" />
+              <br>
+              <br>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ROLE:</p>
+              <p class="post-value">Full Stack Developer</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Swift, Python, MySQL, Docker Compose, FastAPI, GCP</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">Pinnacle 2021</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">DEVPOST:</p>
+              <p class="post-value"><a href="https://devpost.com/software/spotlight-f1w5k6" target="_blank"
+                  class="w3-hover-text-red">Spotlight</a></p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">Inspiration:</p>
+              <p>The experience of enjoying music is deeply personal, but it doesn’t have to be done in isolation.
+                Current music streaming platforms like Spotify are very limited in allowing users to interact with one
+                another—it is extremely difficult to discover new music that you actually like or stay up to date with
+                your friends’ evolving music tastes.
+                <br>
+                <br>
+                We identified the following problems to design our solution around:
+                <br>
+                <br>
+                <b>Hidden gems</b> - Spotify only promotes Spotify-curated playlists, which are dominated only by top-paid
+                artists. As a result, less popular artists do not get discovered. Low-played and low-payed tracks are
+                forgotten and hidden, almost impossible to find unless users know exactly what to search.
+                <br>
+                <br>
+                <b>Isolation</b> - Users are disconnected from each other, unable to meaningfully interact with one another on
+                the platform. It is extremely difficult to stay up to date with your friends' evolving music tastes.
+                <br>
+                <br>
+                <b>Ice breaker</b> - Friendships can be sparked by shared tastes in music—but there is no quick way to discover
+                new users (and playlists) to follow on current music streaming platforms.
+              </p>
+              <p class="post-title">What it does:</p>
+              <p>Spotlight is a music extension app for Spotify; We focus on highlighting the authentic experience of
+                discovering by spotlighting real user’s musical footprints. From listeners to artists, people can
+                discover and share their unique curated playlists while sparking new friendships through shared taste in
+                music. Each of the three following key features is designed to tackle one aforementioned issue users
+                encounter on current streaming platforms:
+                <br>
+                <br>
+                <b>Discover</b> - Sick of listening to Top 50? Discover authentic user-generated playlists and new songs
+                curated across the globe.
+                <br>
+                <br>
+                <b>Community</b> - Interact with Spotify users like you never have before, and send music directly to your feed
+                or private inbox!
+                <br>
+                <br>
+                <b>Compatibility</b> - With compatibility scores, you can spark friendships by a shared taste in music. And
+                yes, we promise, it’s better than Tinder.
+              </p>
+              <p class="post-title">How we built it:</p>
+              <p>
+                This project was built with our first hackathon all-nighter. We were late on our ideation, finalizing
+                our idea 4 hours into the hackathon. We then decided to use a trusty full stack setup: MySQL database,
+                Python FastAPI server, and a Swift UI frontend iOS app. We also decided to include some unique technical
+                features, including docker-compose and our unique hybrid ML model. We created a docker-compose set up to
+                allow our two developers to share an identical dev environment, with an easy "docker-compose up" command
+                to start the database and server. This also includes initialization of mock data, tables and stored
+                procedures. The setup allowed us to explore various hosting options including Raspberry Pi/Jetson Nano
+                (unfortunately we had no ethernet), and allowed us to ultimately deploy on GCP. We also built a
+                recommendation engine that combines algorithms with human intelligence. The app discovers users similar
+                to you through a cosine similarity algorithm, this data is then stored on our database for fast
+                inference. The parameters used include variables like danceability, tempo, speechiness and 7 more, all
+                extracted from Spotify. We then pull top playlists from these users from our database to ultimately
+                provide a mixed recommendation for the user. In addition, we apply the same technique from a user to all
+                the playlists in our database, providing a raw algorithmic suggestion.</p>
+              <p class="post-title">Challenges we ran into:</p>
+              <p>A big problem we had was in the final 8 hours of the competition. We started encountering many minor
+                issues as we got tired, including minute details like missed semi-colon, typos, and our personal
+                favorite: using the wrong email address in the dev console (denying us access for an hour). However,
+                given the time constraint and difficult circumstances, our team was able to pull an all-nighter and
+                complete the app before the deadline.</p>
+              <p class="post-title">Accomplishments that we’re proud of:</p>
+              <p>Pinnacle will be the last hackathon for all four of us, so we are really proud to get together and
+                build one last time. </p>
+              <p class="post-title">What's next for Spotlight:</p>
+              <p>We plan to polish and release this app into full production, stay tuned!</p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer />
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
