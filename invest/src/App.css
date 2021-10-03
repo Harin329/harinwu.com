@@ -39,3 +39,18 @@
   color: white;
   font-size: 29px;
 }
+
+.ModalText {
+  color: #715192;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.Input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.InputDesc {
+  color: #715192;
+}
