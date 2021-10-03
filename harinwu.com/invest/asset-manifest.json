@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.1392cd2c.chunk.css",
-    "main.js": "/static/js/main.db85f5ff.chunk.js",
-    "main.js.map": "/static/js/main.db85f5ff.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ed3e69f3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ed3e69f3.js.map",
-    "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
-    "static/js/2.a78e8f76.chunk.js": "/static/js/2.a78e8f76.chunk.js",
-    "static/js/2.a78e8f76.chunk.js.map": "/static/js/2.a78e8f76.chunk.js.map",
-    "static/js/3.5c57928b.chunk.js": "/static/js/3.5c57928b.chunk.js",
-    "static/js/3.5c57928b.chunk.js.map": "/static/js/3.5c57928b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.1392cd2c.chunk.css.map": "/static/css/main.1392cd2c.chunk.css.map",
-    "static/js/2.a78e8f76.chunk.js.LICENSE.txt": "/static/js/2.a78e8f76.chunk.js.LICENSE.txt"
+    "main.css": "/invest/static/css/main.1392cd2c.chunk.css",
+    "main.js": "/invest/static/js/main.c7c37b45.chunk.js",
+    "main.js.map": "/invest/static/js/main.c7c37b45.chunk.js.map",
+    "runtime-main.js": "/invest/static/js/runtime-main.34f03216.js",
+    "runtime-main.js.map": "/invest/static/js/runtime-main.34f03216.js.map",
+    "static/css/2.a95be28f.chunk.css": "/invest/static/css/2.a95be28f.chunk.css",
+    "static/js/2.a03c3e2b.chunk.js": "/invest/static/js/2.a03c3e2b.chunk.js",
+    "static/js/2.a03c3e2b.chunk.js.map": "/invest/static/js/2.a03c3e2b.chunk.js.map",
+    "static/js/3.5c57928b.chunk.js": "/invest/static/js/3.5c57928b.chunk.js",
+    "static/js/3.5c57928b.chunk.js.map": "/invest/static/js/3.5c57928b.chunk.js.map",
+    "index.html": "/invest/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/invest/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.1392cd2c.chunk.css.map": "/invest/static/css/main.1392cd2c.chunk.css.map",
+    "static/js/2.a03c3e2b.chunk.js.LICENSE.txt": "/invest/static/js/2.a03c3e2b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed3e69f3.js",
+    "static/js/runtime-main.34f03216.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.a78e8f76.chunk.js",
+    "static/js/2.a03c3e2b.chunk.js",
     "static/css/main.1392cd2c.chunk.css",
-    "static/js/main.db85f5ff.chunk.js"
+    "static/js/main.c7c37b45.chunk.js"
   ]
 }
