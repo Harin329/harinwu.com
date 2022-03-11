@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Digest</title>
+  <meta name="description" content="Digest">
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../../components/footer.js"></script>
+  <script src="../../components/header.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header />
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">Digest</h1>
+            <p class="work-page__time"><time datetime="2022-03-01T00:00:00+00:00" itemprop="datePublished">Mar
+                2022</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <a href="https://github.com/Harin329/Digest" target="_blank"><img class="OpenGithub"
+                  src="../../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              <br>
+              <br>
+            </div>
+
+            <a href="https://digestapi.azurewebsites.net/docs">See Digest in Action!</a>
+            <br>
+            <br>
+
+            <div class="post-category">
+              <p class="post-title">GOAL:</p>
+              <p class="post-value">Learning about Word2Vec and gloVe algorithms for NLP.</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Python, Word2Vec, gloVe, Azure, spaCy, C</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">Personal Project</p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">DESCRIPTION:</p>
+              <p>Welcome to Digest. This is an exploration of the Word2Vec algorithm. The goal of this project is to
+                create an API that accepts a block of recipe steps and returns a parsed list of steps. The API is being
+                applied in the app Umami. The process of the project involves downloading a recipe set (RecipeNLG),
+                using Google's Word2Vec algorithm to create word vector mappings, importing mappings into spaCy,
+                calculating average vectors for a set of ingredients and actions and finally using these metrics to
+                determine if a given recipe step is valid from a block of text.
+              </p>
+              </p>
+            </div>
+            <footer class="work-page__footer">
+              <p>
+
+              </p>
+            </footer>
+        </article>
+
+      </div>
+
+      <main-footer />
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
