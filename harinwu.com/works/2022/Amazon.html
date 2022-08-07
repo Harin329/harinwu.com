@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Amazon</title>
+  <meta name="description" content="SAP">
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../../components/footer.js"></script>
+  <script src="../../components/header.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header />
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">CloudFormation Stack Event Retriever</h1>
+            <p class="work-page__time"><time datetime="2022-05-16T00:00:00+00:00" itemprop="datePublished">May 2022 -
+                Aug 2022</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <img src="../../images/2022/Amazon.png" width="200px" />
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">ROLE:</p>
+              <p class="post-value">Software Developer Engineer Intern</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">AWS Lambda, AWS CloudWatch, AWS Kinesis, AWS Kinesis Agent, AWS SQS, Internal Tools,
+                Java</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">Amazon</p>
+            </div>
+
+            <div class="post-description">
+              <p class="post-title">DESCRIPTION:</p>
+              <p>When an engineer needs to debug a deployment-related issue, they need to ask the customer to
+                provide event logs or screenshots, as the engineer does not have access to customer AWS accounts.
+                Currently the stack events from CloudFormation store logs and provide status updates and status reasons
+                for the deployment in a customer’s AWS account. These provide a high-level status overview of the
+                deployment for a customer’s stack and provide information like deployment monitor URL for failed
+                deployments. At the same time, our deployer and deployer service emit logs into Timber, which an
+                engineer can query via Bark. Alternatively, with a deployment ID, an engineer can view logs in the
+                deployment monitoring page. We want to develop a feature that allows these logs to be stored and easily
+                retrieved by an engineer with the right access.
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer />
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
