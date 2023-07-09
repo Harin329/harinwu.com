@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>harinBot</title>
+  <meta name="description" content="harinBot">
+  <link rel="shortcut icon" type="image/x-icon" href="../../images/WebsiteIcons/Infinity.png" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" href="../../styles/harinstyles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script src="../../components/footer.js"></script>
+  <script src="../../components/header.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ2SDDT5V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQ2SDDT5V8');
+  </script>
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="page">
+      <header class="page_header">
+        <main-header />
+      </header>
+
+      <div class="page_main">
+        <article class="work-page">
+          <header class="work-page__header">
+            <h1 class="work-page__title">harinBot</h1>
+            <p class="work-page__time"><time datetime="2023-07-01T00:00:00+00:00" itemprop="datePublished">Jul
+                2023</time></p>
+          </header>
+          <div class="work-page__main">
+            <div class="post-description">
+              <p class="post-title">harinBot repository:</p>
+              <a href="https://github.com/Harin329/harinBot" target="_blank" class="w3-hover-text-red"><img
+                  class="OpenGithub" src="../../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              
+              <br>
+              <br>
+              <br>
+              <p class="post-title">embedchain contribution:</p>
+              <a href="https://github.com/embedchain/embedchain/pull/160" target="_blank" class="w3-hover-text-red"><img
+                  class="OpenGithub" src="../../images/Github.png" alt="Github" style="width:50px; float: left;"></a>
+              <br>
+              <br>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">Product:</p>
+              <p class="post-value">Human Chatbot</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">TECHNOLOGY:</p>
+              <p class="post-value">Python, Embedchain, Open AI API</p>
+            </div>
+
+            <div class="post-category">
+              <p class="post-title">COMPANY:</p>
+              <p class="post-value">Personal Project</p>
+            </div>
+
+            <div class="post-description">
+              <p>
+                Based on prompt engineering, harinBot leverages the embedchain framework and my entire Facebook,
+                WhatsApp and Discord message history to make a chatbot mimic my conversation styles.
+                <br>
+                <br>
+                This included solving bugs with the embedchain framework and submitting an approved PR into a project
+                with over 3.5k stars.
+                <br>
+                <br>
+                In short, my conversations are embedded into tokens, stored on a database. When a user talks to the
+                chatbot, their sentence is embedded as well and queried for similar vectors, and those sentences are
+                then used as context for the GPT inference model provided by OpenAI.
+                <br>
+                <br>
+                This allowed me to explore the power of prompt engineering and the latest frameworks in NLP. The end
+                result provided surprisingly similar responses to my own, which are redacted here for privacy. However,
+                limitations could be detected as GPT's extremely polite writing style was very much different from
+                everyday conversations with friends. I'm hoping to incorporate my own models in the future and help make
+                more improvements on the rapidly growing embedchain project.
+              </p>
+            </div>
+
+
+          </div>
+          <footer class="work-page__footer">
+            <p>
+
+            </p>
+          </footer>
+        </article>
+
+      </div>
+
+      <main-footer />
+
+
+      <script>
+        (function () {
+          let images = document.querySelectorAll(".preview-img");
+          lazyload(images);
+        })();
+      </script>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
