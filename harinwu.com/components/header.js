@@ -11,9 +11,9 @@ class Header extends HTMLElement {
     <!-- Header -->
       <p>
         <a href="../../">Home</a>
-        <span class="divider"/>
+        <span id="divider" class="divider"/></span>
         <a href="../../goals/">About Me</a>
-        <span class="divider"/>
+        <span id="divider" class="divider"/></span>
         <a onclick="document.getElementById('downloadResume').style.display='block'" style="cursor: pointer;">
           Resume
         </a>
